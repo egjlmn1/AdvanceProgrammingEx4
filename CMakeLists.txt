@@ -15,4 +15,8 @@ add_executable(Project
         Problems/StringProblem.cpp Problems/StringProblem.h
         Solutions/StringSolution.cpp Solutions/StringSolution.h
         Solvers/StringReverser.cpp Solvers/StringReverser.h
+
+        SearchingAlgorithms/State.cpp
+        SearchingAlgorithms/State.h
+
         )

@@ -230,6 +230,33 @@ Problems/StringProblem.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Problems/StringProblem.cpp.s
 .PHONY : Problems/StringProblem.cpp.s
 
+SearchingAlgorithms/State.obj: SearchingAlgorithms/State.cpp.obj
+
+.PHONY : SearchingAlgorithms/State.obj
+
+# target to build an object file
+SearchingAlgorithms/State.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj
+.PHONY : SearchingAlgorithms/State.cpp.obj
+
+SearchingAlgorithms/State.i: SearchingAlgorithms/State.cpp.i
+
+.PHONY : SearchingAlgorithms/State.i
+
+# target to preprocess a source file
+SearchingAlgorithms/State.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.i
+.PHONY : SearchingAlgorithms/State.cpp.i
+
+SearchingAlgorithms/State.s: SearchingAlgorithms/State.cpp.s
+
+.PHONY : SearchingAlgorithms/State.s
+
+# target to generate assembly for a file
+SearchingAlgorithms/State.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s
+.PHONY : SearchingAlgorithms/State.cpp.s
+
 Solutions/StringSolution.obj: Solutions/StringSolution.cpp.obj
 
 .PHONY : Solutions/StringSolution.obj
@@ -332,6 +359,9 @@ help:
 	@echo ... Problems/StringProblem.obj
 	@echo ... Problems/StringProblem.i
 	@echo ... Problems/StringProblem.s
+	@echo ... SearchingAlgorithms/State.obj
+	@echo ... SearchingAlgorithms/State.i
+	@echo ... SearchingAlgorithms/State.s
 	@echo ... Solutions/StringSolution.obj
 	@echo ... Solutions/StringSolution.i
 	@echo ... Solutions/StringSolution.s
