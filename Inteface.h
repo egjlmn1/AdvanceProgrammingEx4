@@ -49,7 +49,7 @@ namespace problem_solving
     public:
         virtual bool has_solution(Problem p) = 0;
         virtual Solution get_solution(Problem p) = 0;
-        virtual void save_solution(Solution s, Problem p) = 0;
+        virtual void save_solution(Problem p, Solution s) = 0;
     };
 }
 

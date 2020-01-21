@@ -13,6 +13,6 @@
 int main(int argc, char *argv[]) {
 
     StringReverser* s = new StringReverser();
-    string sol = s->solve(new StringProblem("123"))->get_string();
+    string sol = s->solve(StringProblem("123")).get_string();
     cout << sol << endl;
 }
