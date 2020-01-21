@@ -23,7 +23,7 @@ public:
 
     Solution get_solution(Problem p) override;
 
-    void save_solution(Solution s, Problem p) override;
+    void save_solution(Problem p, Solution s) override;
 };
 
 

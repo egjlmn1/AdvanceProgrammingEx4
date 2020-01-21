@@ -7,10 +7,8 @@
 
 template <class Problem, class Solution>
 bool FileCacheManager<Problem, Solution>::has_solution(Problem p) {
-    bool FileCacheManager::has_solution(Problem p) {
-        ifstream ifile(p.to_string());
-        return (bool) ifile;
-    }
+    ifstream ifile(p.to_string());
+    return (bool) ifile;
 }
 
 
@@ -35,13 +33,13 @@ Solution FileCacheManager<Problem, Solution>::get_solution(Problem p) {
     pair<Solution, typename list<Problem>::iterator> pai = it->second;
     lst.remove(p);
     map.erase(p);
-    insert(key, pai.first);
+    save_solution(p, pai.first);
     return pai.first;
 
 }
 
 template <class Problem, class Solution>
-void FileCacheManager<Problem, Solution>::save_solution(Solution s, Problem p) {
+void FileCacheManager<Problem, Solution>::save_solution(Problem p, Solution s) {
     if (has_solution(p)) {
         //exist
         auto it = map.find(p);
