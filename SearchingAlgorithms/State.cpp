@@ -4,14 +4,17 @@
 
 #include "State.h"
 
-State::State(string State) {
+template <class T>
+State<T>::State(T State) {
     this->state = state;
 }
 
-bool State::Equals(State s) {
+template <class T>
+bool State<T>::Equals(State<T> s) {
     return this->state.compare(s.GetState());
 }
 
-string State::GetState() {
+template <class T>
+T State<T>::GetState() {
     return this->state;
 }

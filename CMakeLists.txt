@@ -18,5 +18,7 @@ add_executable(Project
 
         SearchingAlgorithms/State.cpp
         SearchingAlgorithms/State.h
+        SearchingAlgorithms/Searchable/ISearchable.h
+        SearchingAlgorithms/Searchers/ISearcher.h
 
         )

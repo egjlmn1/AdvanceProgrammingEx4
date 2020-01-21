@@ -9,16 +9,17 @@
 
 using namespace std;
 
+template <class T>
 class State {
 private:
-    string state;
+    T state;
     double cost;
-    State* cameFrom;
+    State<T> cameFrom;
 
 public:
-    State(string State);
-    virtual bool Equals(State s);
-    string GetState();
+    State<T>(T state);
+    virtual bool Equals(State<T> s);
+    T GetState();
 };
 
 
