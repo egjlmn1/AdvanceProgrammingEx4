@@ -5,7 +5,8 @@
 #ifndef EX4_STRINGSOLUTION_H
 #define EX4_STRINGSOLUTION_H
 
-#include "../Inteface.h"
+#include "../Inteface.h
+
 
 class StringSolution {
     string solution;

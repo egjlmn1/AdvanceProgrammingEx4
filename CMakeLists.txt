@@ -20,5 +20,9 @@ add_executable(Project
         SearchingAlgorithms/State.h
         SearchingAlgorithms/Searchable/ISearchable.h
         SearchingAlgorithms/Searchers/ISearcher.h
+        SearchingAlgorithms/Searchers/Searcher.h
+        SearchingAlgorithms/Searchers/Searcher.cpp
+        SearchingAlgorithms/MyPriorityQueue.h
+        SearchingAlgorithms/MyPriorityQueue.cpp
 
         )

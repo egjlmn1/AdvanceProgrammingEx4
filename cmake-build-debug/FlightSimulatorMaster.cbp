@@ -107,10 +107,22 @@
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Problems/StringProblem.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/ISearcher.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.cpp">

@@ -1,0 +1,14 @@
+//
+// Created by ophir on 1/22/2020.
+//
+
+#ifndef FLIGHTSIMULATORMASTER_MYPRIORITYQUEUE_H
+#define FLIGHTSIMULATORMASTER_MYPRIORITYQUEUE_H
+
+template <class T>
+class MyPriorityQueue {
+
+};
+
+
+#endif //FLIGHTSIMULATORMASTER_MYPRIORITYQUEUE_H
