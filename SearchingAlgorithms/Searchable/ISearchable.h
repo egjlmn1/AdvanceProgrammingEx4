@@ -10,9 +10,9 @@
 
 template <class T>
 class ISearchable {
-    State<T> GetInitialState() = 0;
-    State<T> GetGoalState() = 0;
-    vector<State<T>> GetAllPossibleStates(State<T> s) = 0;
+    State<T>* GetInitialState() = 0;
+    State<T>* GetGoalState() = 0;
+    vector<State<T>*> GetAllPossibleStates(State<T>* s) = 0;
 };
 
 #endif //FLIGHTSIMULATORMASTER_ISEARCHABLE_H

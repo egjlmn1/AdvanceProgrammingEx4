@@ -8,7 +8,7 @@
 #include "ISearcher.h"
 #include "../State.h"
 #include "../MyPriorityQueue.h"
-#include "../../Solutions/StringSolution.h"
+#include "../../Solutions/Solution.h"
 
 template <class T>
 class Searcher : ISearcher<T> {
@@ -18,10 +18,11 @@ private:
 
 public:
     Searcher<T>();
+    void PushOpenList();
     State<T> PopOpenList();
     int OpenListSize();
     int GetNumberOfNodesEvaluated();
-    virtual StringSolution search(ISearchable<T> searchable) = 0;
+    virtual Solution<T> search(ISearchable<T> searchable) = 0;
 };
 
 #endif //FLIGHTSIMULATORMASTER_SEARCHER_H

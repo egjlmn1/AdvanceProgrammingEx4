@@ -14,7 +14,6 @@ private:
     vector<State<T>> answerVec;
 public:
     Solution(vector<State<T>> vec);
-
 };
 
 #endif //FLIGHTSIMULATORMASTER_SOLUTION_H

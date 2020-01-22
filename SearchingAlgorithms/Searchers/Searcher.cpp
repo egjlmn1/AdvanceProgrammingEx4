@@ -13,7 +13,12 @@ Searcher<T>::Searcher() {
 template <class T>
 State<T> Searcher<T>::PopOpenList() {
     this->evaluatedNodes++;
-    return openList.poll();
+    return openList.Pop();
+}
+
+template <class T>
+void Searcher<T>::PushOpenList(State<T>* state) {
+    this->openList.Push(state);
 }
 
 template <class T>

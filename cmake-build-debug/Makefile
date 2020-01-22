@@ -257,6 +257,60 @@ SearchingAlgorithms/MyPriorityQueue.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.s
 .PHONY : SearchingAlgorithms/MyPriorityQueue.cpp.s
 
+SearchingAlgorithms/Searchable/MatrixSearchable.obj: SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
+
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.obj
+
+# target to build an object file
+SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
+
+SearchingAlgorithms/Searchable/MatrixSearchable.i: SearchingAlgorithms/Searchable/MatrixSearchable.cpp.i
+
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.i
+
+# target to preprocess a source file
+SearchingAlgorithms/Searchable/MatrixSearchable.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.i
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.cpp.i
+
+SearchingAlgorithms/Searchable/MatrixSearchable.s: SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
+
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.s
+
+# target to generate assembly for a file
+SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
+.PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
+
+SearchingAlgorithms/Searchers/BestFirstSearch.obj: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
+
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.obj
+
+# target to build an object file
+SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
+
+SearchingAlgorithms/Searchers/BestFirstSearch.i: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
+
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.i
+
+# target to preprocess a source file
+SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
+
+SearchingAlgorithms/Searchers/BestFirstSearch.s: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
+
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.s
+
+# target to generate assembly for a file
+SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
+.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
+
 SearchingAlgorithms/Searchers/Searcher.obj: SearchingAlgorithms/Searchers/Searcher.cpp.obj
 
 .PHONY : SearchingAlgorithms/Searchers/Searcher.obj
@@ -443,6 +497,12 @@ help:
 	@echo ... SearchingAlgorithms/MyPriorityQueue.obj
 	@echo ... SearchingAlgorithms/MyPriorityQueue.i
 	@echo ... SearchingAlgorithms/MyPriorityQueue.s
+	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.obj
+	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.i
+	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.s
+	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.obj
+	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.i
+	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.s
 	@echo ... SearchingAlgorithms/Searchers/Searcher.obj
 	@echo ... SearchingAlgorithms/Searchers/Searcher.i
 	@echo ... SearchingAlgorithms/Searchers/Searcher.s
