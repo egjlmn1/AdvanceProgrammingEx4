@@ -12,10 +12,10 @@ class MatrixSearchable : ISearchable<T> {
 private:
     int length;
     int width;
-    int **matrix;
+    double **matrix;
     State<T>*** states;
 public:
-    MatrixSearchable(int len, int wid, int **mat);
+    MatrixSearchable(int len, int wid, double **mat);
     void InitializeStates();
     State<T>* GetInitialState() = 0;
     State<T>* GetGoalState() = 0;

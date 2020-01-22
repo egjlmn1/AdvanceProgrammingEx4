@@ -5,13 +5,13 @@
 #include "State.h"
 
 template <class T>
-State<T>::State(T State) {
+State<T>::State(T State, double cost) {
     this->state = state;
 }
 
 template <class T>
-bool State<T>::Equals(State<T> s) {
-    return this->state.compare(s.GetState());
+bool State<T>::Equals(State<T>* s) {
+    return this->state.compare(s->GetState());
 }
 
 template <class T>
@@ -27,4 +27,14 @@ double State<T>::GetCost() {
 template <class T>
 State<T>* State<T>::GetPrevious() {
     return this->cameFrom;
+}
+
+template <class T>
+void State<T>::UpdateCost(double newCost) {
+    this->cost = newCost;
+}
+
+template <class T>
+void State<T>::UpdatePrevious(State<T> *prev) {
+    this->cameFrom = prev;
 }

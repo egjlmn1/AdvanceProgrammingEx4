@@ -17,11 +17,13 @@ private:
     State<T>* cameFrom;
 
 public:
-    State<T>(T state);
-    virtual bool Equals(State<T> s);
+    State<T>(T state, double cost);
+    virtual bool Equals(State<T>* s);
     T GetState();
     double GetCost();
     State<T>* GetPrevious();
+    void UpdateCost(double newCost);
+    void UpdatePrevious(State<T>* prev);
 };
 
 
