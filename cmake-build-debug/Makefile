@@ -311,6 +311,33 @@ SearchingAlgorithms/State.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s
 .PHONY : SearchingAlgorithms/State.cpp.s
 
+Solutions/Solution.obj: Solutions/Solution.cpp.obj
+
+.PHONY : Solutions/Solution.obj
+
+# target to build an object file
+Solutions/Solution.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/Solution.cpp.obj
+.PHONY : Solutions/Solution.cpp.obj
+
+Solutions/Solution.i: Solutions/Solution.cpp.i
+
+.PHONY : Solutions/Solution.i
+
+# target to preprocess a source file
+Solutions/Solution.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/Solution.cpp.i
+.PHONY : Solutions/Solution.cpp.i
+
+Solutions/Solution.s: Solutions/Solution.cpp.s
+
+.PHONY : Solutions/Solution.s
+
+# target to generate assembly for a file
+Solutions/Solution.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/Solution.cpp.s
+.PHONY : Solutions/Solution.cpp.s
+
 Solutions/StringSolution.obj: Solutions/StringSolution.cpp.obj
 
 .PHONY : Solutions/StringSolution.obj
@@ -422,6 +449,9 @@ help:
 	@echo ... SearchingAlgorithms/State.obj
 	@echo ... SearchingAlgorithms/State.i
 	@echo ... SearchingAlgorithms/State.s
+	@echo ... Solutions/Solution.obj
+	@echo ... Solutions/Solution.i
+	@echo ... Solutions/Solution.s
 	@echo ... Solutions/StringSolution.obj
 	@echo ... Solutions/StringSolution.i
 	@echo ... Solutions/StringSolution.s

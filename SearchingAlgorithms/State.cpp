@@ -18,3 +18,13 @@ template <class T>
 T State<T>::GetState() {
     return this->state;
 }
+
+template <class T>
+double State<T>::GetCost() {
+    return this->cost;
+}
+
+template <class T>
+State<T>* State<T>::GetPrevious() {
+    return this->cameFrom;
+}

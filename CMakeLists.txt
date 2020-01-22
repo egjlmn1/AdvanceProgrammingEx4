@@ -13,7 +13,7 @@ add_executable(Project
         FileCacheManager.cpp FileCacheManager.h
 
         Problems/StringProblem.cpp Problems/StringProblem.h
-        Solutions/StringSolution.cpp Solutions/StringSolution.h
+        Solutions/StringSolution.cpp Solutions/StringSolution.h Solutions/Solution.h Solutions/Solution.cpp
         Solvers/StringReverser.cpp Solvers/StringReverser.h
 
         SearchingAlgorithms/State.cpp

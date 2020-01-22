@@ -20,6 +20,8 @@ public:
     State<T>(T state);
     virtual bool Equals(State<T> s);
     T GetState();
+    double GetCost();
+    State<T>* GetPrevious();
 };
 
 
