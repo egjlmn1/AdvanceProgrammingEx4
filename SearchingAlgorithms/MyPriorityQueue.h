@@ -20,6 +20,7 @@ public:
     void Update();
     State<T>* Pop();
     int GetSize();
+    bool IsInQueue(State<T>* n);
 };
 
 

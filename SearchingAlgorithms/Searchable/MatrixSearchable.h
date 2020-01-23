@@ -20,6 +20,8 @@ public:
     State<T>* GetInitialState() = 0;
     State<T>* GetGoalState() = 0;
     vector<State<T>*> GetAllPossibleStates(State<T>* s) = 0;
+    int GetLengthByState(State<T>* state);
+    int GetWidthByState(State<T>* state);
 
 };
 

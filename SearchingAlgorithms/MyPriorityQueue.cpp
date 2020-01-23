@@ -21,7 +21,7 @@ void MyPriorityQueue<T>::Update() {
     // take all out
     while (!this->queue.empty()) {
         temp.push_back(this->queue.top());
-        this->queue.pop()
+        this->queue.pop();
     }
 
     // return all
@@ -41,4 +41,30 @@ State<T>* MyPriorityQueue<T>::Pop() {
 template <class T>
 int MyPriorityQueue<T>::GetSize() {
     return this->size;
+}
+
+template <class T>
+bool MyPriorityQueue<T>::IsInQueue(State<T>* n) {
+    bool flag = false;
+    vector<State<T>*> temp;
+
+    // take all out
+    while (!this->queue.empty()) {
+        temp.push_back(this->queue.top());
+        this->queue.pop();
+    }
+
+    for (State<T>* state : temp) {
+        if (state->Equals(n)) {
+            flag = true;
+        }
+    }
+
+    // return all
+    while(!temp.empty()) {
+        this->queue.push(temp.back());
+        temp.pop_back();
+    }
+
+    return flag;
 }

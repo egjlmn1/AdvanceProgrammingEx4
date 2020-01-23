@@ -30,3 +30,13 @@ template <class T>
 int Searcher<T>::GetNumberOfNodesEvaluated() {
     return this->evaluatedNodes;
 }
+
+template <class T>
+bool Searcher<T>::IsInOpenList(State<T>* state) {
+    return this->openList.IsInQueue(state);
+}
+
+template <class T>
+void Searcher<T>::UpdateQueue() {
+    this->openList.Update();
+}

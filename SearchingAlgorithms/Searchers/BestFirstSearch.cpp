@@ -15,6 +15,27 @@ Solution<T>* BestFirstSearch<T>::search(ISearchable<T> searchable) {
         }
 
         vector<State<T>*> successors = searchable.GetAllPossibleStates(n);
-        //
+
+
+        for (State<T>* state : successors) {
+            if (!this->closed.find(state) && !this->IsInOpenList(state)) {
+                state->UpdatePrevious(n);
+                state->UpdateCost(state->GetCost() + n->GetCost());
+                this->PushOpenList(state);
+            } else {
+                if (!this->IsInOpenList(state)) {
+                    state->UpdatePrevious(n);
+                    state->UpdateCost(state->GetCost() + n->GetCost());
+                    this->PushOpenList(state);
+                } else {
+                    double newCost = state->GetCost() - state->GetPrevious()->GetCost() + n->GetCost();
+                    if (newCost < state->GetCost()) {
+                        state->UpdatePrevious(n);
+                        state->UpdateCost(newCost);
+                        this->UpdateQueue();
+                    }
+                }
+            }
+        }
     }
 }

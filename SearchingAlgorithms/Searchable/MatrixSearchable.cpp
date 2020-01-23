@@ -40,17 +40,9 @@ State<T>* MatrixSearchable<T>::GetGoalState() {
 template <class T>
 vector<State<T>*> MatrixSearchable<T>::GetAllPossibleStates(State<T> *s) {
     vector<State<T>*> neighbors;
-    int stateLen = this->length;
-    int stateWid = this->width;
+    int stateLen = this->GetLengthByState(s);
+    int stateWid = this->GetWidthByState(s);
 
-    for (int i = 0; i < this->length; i++) {
-        for (int j = 0; j < this->width; i++) {
-            if (this->states[i][j]->Equals(s)) {
-                stateLen = i;
-                stateWid = j;
-            }
-        }
-    }
 
     if (stateLen == this->length || stateWid == this->width) {
         cerr << "Error in matrix searchable get all possible states" << endl;
@@ -82,4 +74,30 @@ vector<State<T>*> MatrixSearchable<T>::GetAllPossibleStates(State<T> *s) {
     }
 
     return neighbors;
+}
+
+template <class T>
+int MatrixSearchable<T>::GetLengthByState(State<T> *s) {
+    int len = this->length;
+    for (int i = 0; i < this->length; i++) {
+        for (int j = 0; j < this->width; i++) {
+            if (this->states[i][j]->Equals(s)) {
+                len = i;
+            }
+        }
+    }
+    return len;
+}
+
+template <class T>
+int MatrixSearchable<T>::GetWidthByState(State<T> *s) {
+    int wid = this->width;
+    for (int i = 0; i < this->length; i++) {
+        for (int j = 0; j < this->width; i++) {
+            if (this->states[i][j]->Equals(s)) {
+                wid = i;
+            }
+        }
+    }
+    return wid;
 }

@@ -18,10 +18,12 @@ private:
 
 public:
     Searcher<T>();
-    void PushOpenList();
+    void PushOpenList(State<T>* s);
     State<T> PopOpenList();
+    bool IsInOpenList(State<T>* state);
     int OpenListSize();
     int GetNumberOfNodesEvaluated();
+    void UpdateQueue();
     virtual Solution<T> search(ISearchable<T> searchable) = 0;
 };
 
