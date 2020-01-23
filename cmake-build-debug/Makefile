@@ -122,114 +122,6 @@ Project/fast:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
-FileCacheManager.obj: FileCacheManager.cpp.obj
-
-.PHONY : FileCacheManager.obj
-
-# target to build an object file
-FileCacheManager.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/FileCacheManager.cpp.obj
-.PHONY : FileCacheManager.cpp.obj
-
-FileCacheManager.i: FileCacheManager.cpp.i
-
-.PHONY : FileCacheManager.i
-
-# target to preprocess a source file
-FileCacheManager.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/FileCacheManager.cpp.i
-.PHONY : FileCacheManager.cpp.i
-
-FileCacheManager.s: FileCacheManager.cpp.s
-
-.PHONY : FileCacheManager.s
-
-# target to generate assembly for a file
-FileCacheManager.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/FileCacheManager.cpp.s
-.PHONY : FileCacheManager.cpp.s
-
-MySerialServer.obj: MySerialServer.cpp.obj
-
-.PHONY : MySerialServer.obj
-
-# target to build an object file
-MySerialServer.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MySerialServer.cpp.obj
-.PHONY : MySerialServer.cpp.obj
-
-MySerialServer.i: MySerialServer.cpp.i
-
-.PHONY : MySerialServer.i
-
-# target to preprocess a source file
-MySerialServer.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MySerialServer.cpp.i
-.PHONY : MySerialServer.cpp.i
-
-MySerialServer.s: MySerialServer.cpp.s
-
-.PHONY : MySerialServer.s
-
-# target to generate assembly for a file
-MySerialServer.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MySerialServer.cpp.s
-.PHONY : MySerialServer.cpp.s
-
-MyTestClientHandler.obj: MyTestClientHandler.cpp.obj
-
-.PHONY : MyTestClientHandler.obj
-
-# target to build an object file
-MyTestClientHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MyTestClientHandler.cpp.obj
-.PHONY : MyTestClientHandler.cpp.obj
-
-MyTestClientHandler.i: MyTestClientHandler.cpp.i
-
-.PHONY : MyTestClientHandler.i
-
-# target to preprocess a source file
-MyTestClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MyTestClientHandler.cpp.i
-.PHONY : MyTestClientHandler.cpp.i
-
-MyTestClientHandler.s: MyTestClientHandler.cpp.s
-
-.PHONY : MyTestClientHandler.s
-
-# target to generate assembly for a file
-MyTestClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/MyTestClientHandler.cpp.s
-.PHONY : MyTestClientHandler.cpp.s
-
-Problems/StringProblem.obj: Problems/StringProblem.cpp.obj
-
-.PHONY : Problems/StringProblem.obj
-
-# target to build an object file
-Problems/StringProblem.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Problems/StringProblem.cpp.obj
-.PHONY : Problems/StringProblem.cpp.obj
-
-Problems/StringProblem.i: Problems/StringProblem.cpp.i
-
-.PHONY : Problems/StringProblem.i
-
-# target to preprocess a source file
-Problems/StringProblem.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Problems/StringProblem.cpp.i
-.PHONY : Problems/StringProblem.cpp.i
-
-Problems/StringProblem.s: Problems/StringProblem.cpp.s
-
-.PHONY : Problems/StringProblem.s
-
-# target to generate assembly for a file
-Problems/StringProblem.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Problems/StringProblem.cpp.s
-.PHONY : Problems/StringProblem.cpp.s
-
 SearchingAlgorithms/MyPriorityQueue.obj: SearchingAlgorithms/MyPriorityQueue.cpp.obj
 
 .PHONY : SearchingAlgorithms/MyPriorityQueue.obj
@@ -392,60 +284,6 @@ Solutions/Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/Solution.cpp.s
 .PHONY : Solutions/Solution.cpp.s
 
-Solutions/StringSolution.obj: Solutions/StringSolution.cpp.obj
-
-.PHONY : Solutions/StringSolution.obj
-
-# target to build an object file
-Solutions/StringSolution.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/StringSolution.cpp.obj
-.PHONY : Solutions/StringSolution.cpp.obj
-
-Solutions/StringSolution.i: Solutions/StringSolution.cpp.i
-
-.PHONY : Solutions/StringSolution.i
-
-# target to preprocess a source file
-Solutions/StringSolution.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/StringSolution.cpp.i
-.PHONY : Solutions/StringSolution.cpp.i
-
-Solutions/StringSolution.s: Solutions/StringSolution.cpp.s
-
-.PHONY : Solutions/StringSolution.s
-
-# target to generate assembly for a file
-Solutions/StringSolution.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/StringSolution.cpp.s
-.PHONY : Solutions/StringSolution.cpp.s
-
-Solvers/StringReverser.obj: Solvers/StringReverser.cpp.obj
-
-.PHONY : Solvers/StringReverser.obj
-
-# target to build an object file
-Solvers/StringReverser.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solvers/StringReverser.cpp.obj
-.PHONY : Solvers/StringReverser.cpp.obj
-
-Solvers/StringReverser.i: Solvers/StringReverser.cpp.i
-
-.PHONY : Solvers/StringReverser.i
-
-# target to preprocess a source file
-Solvers/StringReverser.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solvers/StringReverser.cpp.i
-.PHONY : Solvers/StringReverser.cpp.i
-
-Solvers/StringReverser.s: Solvers/StringReverser.cpp.s
-
-.PHONY : Solvers/StringReverser.s
-
-# target to generate assembly for a file
-Solvers/StringReverser.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solvers/StringReverser.cpp.s
-.PHONY : Solvers/StringReverser.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -482,18 +320,6 @@ help:
 	@echo ... Project
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... FileCacheManager.obj
-	@echo ... FileCacheManager.i
-	@echo ... FileCacheManager.s
-	@echo ... MySerialServer.obj
-	@echo ... MySerialServer.i
-	@echo ... MySerialServer.s
-	@echo ... MyTestClientHandler.obj
-	@echo ... MyTestClientHandler.i
-	@echo ... MyTestClientHandler.s
-	@echo ... Problems/StringProblem.obj
-	@echo ... Problems/StringProblem.i
-	@echo ... Problems/StringProblem.s
 	@echo ... SearchingAlgorithms/MyPriorityQueue.obj
 	@echo ... SearchingAlgorithms/MyPriorityQueue.i
 	@echo ... SearchingAlgorithms/MyPriorityQueue.s
@@ -512,12 +338,6 @@ help:
 	@echo ... Solutions/Solution.obj
 	@echo ... Solutions/Solution.i
 	@echo ... Solutions/Solution.s
-	@echo ... Solutions/StringSolution.obj
-	@echo ... Solutions/StringSolution.i
-	@echo ... Solutions/StringSolution.s
-	@echo ... Solvers/StringReverser.obj
-	@echo ... Solvers/StringReverser.i
-	@echo ... Solvers/StringReverser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

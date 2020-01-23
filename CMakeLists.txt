@@ -8,13 +8,7 @@ add_executable(Project
         main.cpp
 
         Inteface.h
-        MySerialServer.cpp MySerialServer.h
-        MyTestClientHandler.cpp MyTestClientHandler.h
-        FileCacheManager.cpp FileCacheManager.h
-
-        Problems/StringProblem.cpp Problems/StringProblem.h
-        Solutions/StringSolution.cpp Solutions/StringSolution.h Solutions/Solution.h Solutions/Solution.cpp
-        Solvers/StringReverser.cpp Solvers/StringReverser.h
+        Solutions/Solution.h Solutions/Solution.cpp
 
         SearchingAlgorithms/State.cpp
         SearchingAlgorithms/State.h
@@ -29,6 +23,4 @@ add_executable(Project
         SearchingAlgorithms/MyPriorityQueue.h
         SearchingAlgorithms/MyPriorityQueue.cpp
         SearchingAlgorithms/StateComparator.h
-
-
         )

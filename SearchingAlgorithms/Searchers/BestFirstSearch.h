@@ -16,7 +16,7 @@ private:
 public:
     BestFirstSearch<T>();
     Solution<T>* search(ISearchable<T> searchable);
-    Solution<T>* CreateSolution();
+    Solution<T>* CreateSolution(ISearchable<T> searchable);
 };
 
 #endif //FLIGHTSIMULATORMASTER_BESTFIRSTSEARCH_H

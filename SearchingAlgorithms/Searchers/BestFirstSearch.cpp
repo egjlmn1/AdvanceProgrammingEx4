@@ -39,3 +39,19 @@ Solution<T>* BestFirstSearch<T>::search(ISearchable<T> searchable) {
         }
     }
 }
+
+template <class T>
+Solution<T>* BestFirstSearch<T>::CreateSolution(ISearchable<T> searchable) {
+    vector<State<T> *> solution;
+    State<T> *last = searchable.GetGoalState();
+
+    State<T> *prev = last;
+    while (prev != NULL) {
+        solution.push_back(prev);
+        prev = prev->GetPrevious();
+    }
+
+    reverse(solution.begin(), solution.end());
+
+    return new Solution<T>(solution);
+}

@@ -80,31 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/FileCacheManager.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/FileCacheManager.h">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Inteface.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/MySerialServer.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/MySerialServer.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/MyTestClientHandler.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/MyTestClientHandler.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Problems/StringProblem.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Problems/StringProblem.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.cpp">
@@ -150,18 +126,6 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/Solution.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/StringSolution.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/StringSolution.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solvers/StringReverser.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solvers/StringReverser.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/main.cpp">
