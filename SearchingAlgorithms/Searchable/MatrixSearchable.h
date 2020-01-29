@@ -16,7 +16,7 @@ private:
     pair<int, int> end;
     State<string> ***states;
 public:
-    MatrixSearchable(int len, int wid, double *mat, pair<int, int>, pair<int, int>);
+    MatrixSearchable(int len, int wid, double *mat, pair<int, int> s, pair<int, int> e);
 
     void InitializeStates();
 
@@ -30,7 +30,7 @@ public:
 
     int GetWidthByState(State<string> *state);
 
-    double CalcHeuristic(State<string> *state);
+    double CalcHeuristic(int i, int j);
 
 };
 

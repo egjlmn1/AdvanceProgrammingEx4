@@ -30,7 +30,7 @@ template<class T>
 State<T>::State(T state, double cost, double heuristic) {
     this->state = state;
     this->cost = cost;
-    this > heuristic = heuristic;
+    this->heuristic = heuristic;
     this->cameFrom = NULL;
 }
 

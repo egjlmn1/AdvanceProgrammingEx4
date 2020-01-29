@@ -17,4 +17,4 @@ add_executable(Project
         SearchingAlgorithms/Searchers/Searcher.h
         SearchingAlgorithms/Searchers/BestFirstSearch.h
         SearchingAlgorithms/MyPriorityQueue.h
-        SearchingAlgorithms/StateComparator.h SearchingAlgorithms/StateComparator.cpp)
+        SearchingAlgorithms/StateComparator.h)

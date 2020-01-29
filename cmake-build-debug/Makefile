@@ -149,33 +149,6 @@ SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
 .PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
 
-SearchingAlgorithms/StateComparator.obj: SearchingAlgorithms/StateComparator.cpp.obj
-
-.PHONY : SearchingAlgorithms/StateComparator.obj
-
-# target to build an object file
-SearchingAlgorithms/StateComparator.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj
-.PHONY : SearchingAlgorithms/StateComparator.cpp.obj
-
-SearchingAlgorithms/StateComparator.i: SearchingAlgorithms/StateComparator.cpp.i
-
-.PHONY : SearchingAlgorithms/StateComparator.i
-
-# target to preprocess a source file
-SearchingAlgorithms/StateComparator.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.i
-.PHONY : SearchingAlgorithms/StateComparator.cpp.i
-
-SearchingAlgorithms/StateComparator.s: SearchingAlgorithms/StateComparator.cpp.s
-
-.PHONY : SearchingAlgorithms/StateComparator.s
-
-# target to generate assembly for a file
-SearchingAlgorithms/StateComparator.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.s
-.PHONY : SearchingAlgorithms/StateComparator.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -215,9 +188,6 @@ help:
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.obj
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.i
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.s
-	@echo ... SearchingAlgorithms/StateComparator.obj
-	@echo ... SearchingAlgorithms/StateComparator.i
-	@echo ... SearchingAlgorithms/StateComparator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
