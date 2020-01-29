@@ -12,7 +12,6 @@ class StringProblem {
     string problem;
 public:
     StringProblem(const string &problem) : problem(problem) {}
-    string get_string() {return problem;}
     string to_string() {return problem;}
 
 };

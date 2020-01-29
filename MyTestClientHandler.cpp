@@ -7,8 +7,8 @@
 #include <unistd.h>
 #include <iostream>
 #include <algorithm>
-#include "SearchingAlgorithms/Searchers/BestFirstSearch.h"
-#include "SearchingAlgorithms/Searchable/MatrixSearchable.h"
+#include "Solvers/MatrixSolver.h"
+#include "Problems/MatrixProblem.h"
 
 
 void MyTestClientHandler::handleClient(int client_socket) {
@@ -63,46 +63,16 @@ void MyTestClientHandler::create_problem(const string& data, int socket) {
 
     pair<pair<int, int>, pair<int, int>> start_end;
     vector<string> point = split(lines[size], ',');
-    cout << lines[size] << endl;
     start_end.first = pair<int, int>(atoi(point[0].c_str()), atoi(point[1].c_str()));
     point = split(lines[size + 1], ',');
     start_end.second = pair<int, int>(atoi(point[0].c_str()), atoi(point[1].c_str()));
 
 
-    MatrixSearchable *searchable = new MatrixSearchable(size, size, matrix_problem);
+    MatrixSolver solver;
+    MatrixProblem m = MatrixProblem(matrix_problem, size, size, start_end.first, start_end.second);
+    StringSolution solution_string = solver.solve(m) ;
 
-    vector<State<string>*> solution;
-    string to_send;
-    int index = 0;
-    while (index < (solution.size() - 1)) {
-        auto state = solution[index];
-
-        int i1 = searchable->GetLengthByState(solution[index]);
-        int j1 = searchable->GetWidthByState(solution[index]);
-
-        index++;
-        auto state2 = solution[index];
-        int i2 = searchable->GetLengthByState(solution[index]);
-        int j2 = searchable->GetWidthByState(solution[index]);
-
-
-        if (i1 > i2) {
-            //up
-            to_send.append("Up (");
-        } else if (i2 < i1) {
-            //down
-            to_send.append("Down (");
-        } else if (j1 > j2) {
-            //left
-            to_send.append("Left (");
-        } else {
-            //right
-            to_send.append("Right (");
-        }
-        to_send.append(to_string(state2->GetCost()));
-        to_send.append("), ");
-    }
-    send(socket, to_send.substr(0, to_send.size()-2).c_str(), to_send.size() - 2, 0);
+    send(socket, solution_string.get_string().c_str(), solution_string.get_string().size(), 0);
 }
 
 vector <string> MyTestClientHandler::split(string data, char to_split) {

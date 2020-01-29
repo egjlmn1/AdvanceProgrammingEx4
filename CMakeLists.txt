@@ -27,4 +27,4 @@ add_executable(AdvanceProgrammingEx4
         SearchingAlgorithms/Searchers/Searcher.h
         SearchingAlgorithms/Searchers/BestFirstSearch.h
         SearchingAlgorithms/MyPriorityQueue.h
-        SearchingAlgorithms/StateComparator.h)
+        SearchingAlgorithms/StateComparator.h Solvers/MatrixSolver.cpp Solvers/MatrixSolver.h Problems/MatrixProblem.cpp Problems/MatrixProblem.h)

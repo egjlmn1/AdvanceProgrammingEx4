@@ -5,8 +5,8 @@
 #include <iostream>
 #include "StringReverser.h"
 
-StringSolution StringReverser::solve(StringProblem problem) {
-    string s = problem.get_string();
+StringSolution StringReverser::solve(StringProblem& problem) {
+    string s = problem.to_string();
     string sol;
     int length = s.size();
     for (int i = length -1; i >= 0; i--) {

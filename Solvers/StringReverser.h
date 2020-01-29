@@ -13,7 +13,7 @@ using namespace problem_solving;
 class StringReverser : Solver<StringProblem, StringSolution> {
 
 public:
-    StringSolution solve(StringProblem problem) override;
+    StringSolution solve(StringProblem& problem) override;
 };
 
 
