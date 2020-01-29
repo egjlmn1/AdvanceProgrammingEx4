@@ -8,11 +8,13 @@ add_executable(Project
         main.cpp
 
         Inteface.h
-        MySerialServer.cpp MySerialServer.h
-        MyTestClientHandler.cpp MyTestClientHandler.h
-        FileCacheManager.cpp FileCacheManager.h
 
-        Problems/StringProblem.cpp Problems/StringProblem.h
-        Solutions/StringSolution.cpp Solutions/StringSolution.h
-        Solvers/StringReverser.cpp Solvers/StringReverser.h
-        )
+        SearchingAlgorithms/State.h
+        SearchingAlgorithms/Searchable/ISearchable.h
+        SearchingAlgorithms/Searchable/MatrixSearchable.h
+        SearchingAlgorithms/Searchable/MatrixSearchable.cpp
+        SearchingAlgorithms/Searchers/ISearcher.h
+        SearchingAlgorithms/Searchers/Searcher.h
+        SearchingAlgorithms/Searchers/BestFirstSearch.h
+        SearchingAlgorithms/MyPriorityQueue.h
+        SearchingAlgorithms/StateComparator.h)

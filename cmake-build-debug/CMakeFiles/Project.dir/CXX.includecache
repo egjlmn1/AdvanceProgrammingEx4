@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h
+vector
+-
+../State.h
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
+
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.cpp
+iostream
+-
+../State.h
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
+MatrixSearchable.h
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h
+
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h
+ISearchable.h
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h
+
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
+string
+-
+

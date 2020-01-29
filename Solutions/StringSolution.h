@@ -6,8 +6,10 @@
 #define EX4_STRINGSOLUTION_H
 
 #include "../Inteface.h"
+#include "Solution.h"
 
-class StringSolution {
+template <class T>
+class StringSolution : Solution<T> {
     string solution;
 public:
     StringSolution(const string &solution) : solution(solution) {}
