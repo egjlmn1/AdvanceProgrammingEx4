@@ -69,22 +69,9 @@ CMakeFiles/Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\main.cpp -o CMakeFiles\Project.dir\main.cpp.s
 
-CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj: ../SearchingAlgorithms/State.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\State.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\State.cpp
-
-CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\State.cpp > CMakeFiles\Project.dir\SearchingAlgorithms\State.cpp.i
-
-CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\State.cpp -o CMakeFiles\Project.dir\SearchingAlgorithms\State.cpp.s
-
 CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj: ../SearchingAlgorithms/Searchable/MatrixSearchable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchable\MatrixSearchable.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchable\MatrixSearchable.cpp
 
 CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.i: cmake_force
@@ -95,48 +82,9 @@ CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchable\MatrixSearchable.cpp -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchable\MatrixSearchable.cpp.s
 
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj: ../SearchingAlgorithms/Searchers/Searcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\Searcher.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\Searcher.cpp
-
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\Searcher.cpp > CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\Searcher.cpp.i
-
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\Searcher.cpp -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\Searcher.cpp.s
-
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj: ../SearchingAlgorithms/Searchers/BestFirstSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\BestFirstSearch.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\BestFirstSearch.cpp
-
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\BestFirstSearch.cpp > CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\BestFirstSearch.cpp.i
-
-CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\Searchers\BestFirstSearch.cpp -o CMakeFiles\Project.dir\SearchingAlgorithms\Searchers\BestFirstSearch.cpp.s
-
-CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj: ../SearchingAlgorithms/MyPriorityQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\MyPriorityQueue.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\MyPriorityQueue.cpp
-
-CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\MyPriorityQueue.cpp > CMakeFiles\Project.dir\SearchingAlgorithms\MyPriorityQueue.cpp.i
-
-CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\MyPriorityQueue.cpp -o CMakeFiles\Project.dir\SearchingAlgorithms\MyPriorityQueue.cpp.s
-
 CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj: ../SearchingAlgorithms/StateComparator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project.dir\SearchingAlgorithms\StateComparator.cpp.obj -c C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\SearchingAlgorithms\StateComparator.cpp
 
 CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.i: cmake_force
@@ -150,28 +98,20 @@ CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.s: cmake_force
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.obj" \
-"CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj" \
 "CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj" \
-"CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj" \
-"CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj" \
-"CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj" \
 "CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
 
 Project.exe: CMakeFiles/Project.dir/main.cpp.obj
-Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
-Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj
-Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
-Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj
 Project.exe: CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linklibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1.rsp
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ophir\CLionProjects\AdvanceProgrammingEx4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

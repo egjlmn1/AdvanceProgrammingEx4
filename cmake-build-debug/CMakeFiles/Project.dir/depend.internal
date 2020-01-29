@@ -37,6 +37,10 @@ CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj
 CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.cpp
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
+CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.cpp
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.h
 CMakeFiles/Project.dir/main.cpp.obj
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Inteface.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.h

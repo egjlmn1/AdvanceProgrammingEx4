@@ -6,10 +6,10 @@
 #define FLIGHTSIMULATORMASTER_ISEARCHER_H
 
 #include "../Searchable/ISearchable.h"
-#include "../../Solutions/StringSolution.h"
 
 template <class T, class Solution>
 class ISearcher {
+public:
     virtual Solution search(ISearchable<T> *searchable) = 0;
     virtual int GetNumberOfNodesEvaluated() = 0;
 };

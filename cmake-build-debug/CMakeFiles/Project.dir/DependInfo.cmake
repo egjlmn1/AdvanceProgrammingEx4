@@ -4,11 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj"
   "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj"
-  "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj"
-  "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj"
-  "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj"
   "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj"
   "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/main.cpp" "C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.obj"
   )

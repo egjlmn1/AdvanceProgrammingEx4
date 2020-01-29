@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj"
   "CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj"
-  "CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj"
-  "CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj"
-  "CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj"
   "CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj"
   "CMakeFiles/Project.dir/main.cpp.obj"
   "Project.exe"

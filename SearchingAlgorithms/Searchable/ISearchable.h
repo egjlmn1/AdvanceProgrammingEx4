@@ -10,6 +10,7 @@
 
 template <class T>
 class ISearchable {
+public:
     virtual State<T>* GetInitialState() = 0;
     virtual State<T>* GetGoalState() = 0;
     virtual vector<State<T>*> GetAllPossibleStates(State<T>* s) = 0;

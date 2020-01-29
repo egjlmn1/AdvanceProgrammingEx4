@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include "../State.h"
 #include "MatrixSearchable.h"
 
 MatrixSearchable::MatrixSearchable(int len, int wid, double **mat) {
@@ -20,7 +21,7 @@ void MatrixSearchable::InitializeStates() {
     }
 
     for (int i = 0; i < this->length; i++) {
-        for (int j = 0; j < this->width; i++) {
+        for (int j = 0; j < this->width; j++) {
             this->states[i][j] = new State<string>(to_string(i) + " " + to_string(j), matrix[i][j]);
         }
     }
@@ -75,9 +76,9 @@ vector<State<string>*> MatrixSearchable::GetAllPossibleStates(State<string> *s) 
 int MatrixSearchable::GetLengthByState(State<string> *s) {
     int len = this->length;
     for (int i = 0; i < this->length; i++) {
-        for (int j = 0; j < this->width; i++) {
+        for (int j = 0; j < this->width; j++) {
             if (this->states[i][j]->Equals(s)) {
-                len = i;
+                return i;
             }
         }
     }
@@ -88,9 +89,9 @@ int MatrixSearchable::GetLengthByState(State<string> *s) {
 int MatrixSearchable::GetWidthByState(State<string> *s) {
     int wid = this->width;
     for (int i = 0; i < this->length; i++) {
-        for (int j = 0; j < this->width; i++) {
+        for (int j = 0; j < this->width; j++) {
             if (this->states[i][j]->Equals(s)) {
-                wid = i;
+                return j;
             }
         }
     }

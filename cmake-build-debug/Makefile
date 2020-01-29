@@ -122,33 +122,6 @@ Project/fast:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
-SearchingAlgorithms/MyPriorityQueue.obj: SearchingAlgorithms/MyPriorityQueue.cpp.obj
-
-.PHONY : SearchingAlgorithms/MyPriorityQueue.obj
-
-# target to build an object file
-SearchingAlgorithms/MyPriorityQueue.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.obj
-.PHONY : SearchingAlgorithms/MyPriorityQueue.cpp.obj
-
-SearchingAlgorithms/MyPriorityQueue.i: SearchingAlgorithms/MyPriorityQueue.cpp.i
-
-.PHONY : SearchingAlgorithms/MyPriorityQueue.i
-
-# target to preprocess a source file
-SearchingAlgorithms/MyPriorityQueue.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.i
-.PHONY : SearchingAlgorithms/MyPriorityQueue.cpp.i
-
-SearchingAlgorithms/MyPriorityQueue.s: SearchingAlgorithms/MyPriorityQueue.cpp.s
-
-.PHONY : SearchingAlgorithms/MyPriorityQueue.s
-
-# target to generate assembly for a file
-SearchingAlgorithms/MyPriorityQueue.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/MyPriorityQueue.cpp.s
-.PHONY : SearchingAlgorithms/MyPriorityQueue.cpp.s
-
 SearchingAlgorithms/Searchable/MatrixSearchable.obj: SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
 
 .PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.obj
@@ -175,87 +148,6 @@ SearchingAlgorithms/Searchable/MatrixSearchable.s: SearchingAlgorithms/Searchabl
 SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
 .PHONY : SearchingAlgorithms/Searchable/MatrixSearchable.cpp.s
-
-SearchingAlgorithms/Searchers/BestFirstSearch.obj: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
-
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.obj
-
-# target to build an object file
-SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.obj
-
-SearchingAlgorithms/Searchers/BestFirstSearch.i: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
-
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.i
-
-# target to preprocess a source file
-SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.i
-
-SearchingAlgorithms/Searchers/BestFirstSearch.s: SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
-
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.s
-
-# target to generate assembly for a file
-SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
-.PHONY : SearchingAlgorithms/Searchers/BestFirstSearch.cpp.s
-
-SearchingAlgorithms/Searchers/Searcher.obj: SearchingAlgorithms/Searchers/Searcher.cpp.obj
-
-.PHONY : SearchingAlgorithms/Searchers/Searcher.obj
-
-# target to build an object file
-SearchingAlgorithms/Searchers/Searcher.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj
-.PHONY : SearchingAlgorithms/Searchers/Searcher.cpp.obj
-
-SearchingAlgorithms/Searchers/Searcher.i: SearchingAlgorithms/Searchers/Searcher.cpp.i
-
-.PHONY : SearchingAlgorithms/Searchers/Searcher.i
-
-# target to preprocess a source file
-SearchingAlgorithms/Searchers/Searcher.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.i
-.PHONY : SearchingAlgorithms/Searchers/Searcher.cpp.i
-
-SearchingAlgorithms/Searchers/Searcher.s: SearchingAlgorithms/Searchers/Searcher.cpp.s
-
-.PHONY : SearchingAlgorithms/Searchers/Searcher.s
-
-# target to generate assembly for a file
-SearchingAlgorithms/Searchers/Searcher.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.s
-.PHONY : SearchingAlgorithms/Searchers/Searcher.cpp.s
-
-SearchingAlgorithms/State.obj: SearchingAlgorithms/State.cpp.obj
-
-.PHONY : SearchingAlgorithms/State.obj
-
-# target to build an object file
-SearchingAlgorithms/State.cpp.obj:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj
-.PHONY : SearchingAlgorithms/State.cpp.obj
-
-SearchingAlgorithms/State.i: SearchingAlgorithms/State.cpp.i
-
-.PHONY : SearchingAlgorithms/State.i
-
-# target to preprocess a source file
-SearchingAlgorithms/State.cpp.i:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.i
-.PHONY : SearchingAlgorithms/State.cpp.i
-
-SearchingAlgorithms/State.s: SearchingAlgorithms/State.cpp.s
-
-.PHONY : SearchingAlgorithms/State.s
-
-# target to generate assembly for a file
-SearchingAlgorithms/State.cpp.s:
-	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s
-.PHONY : SearchingAlgorithms/State.cpp.s
 
 SearchingAlgorithms/StateComparator.obj: SearchingAlgorithms/StateComparator.cpp.obj
 
@@ -320,21 +212,9 @@ help:
 	@echo ... Project
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... SearchingAlgorithms/MyPriorityQueue.obj
-	@echo ... SearchingAlgorithms/MyPriorityQueue.i
-	@echo ... SearchingAlgorithms/MyPriorityQueue.s
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.obj
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.i
 	@echo ... SearchingAlgorithms/Searchable/MatrixSearchable.s
-	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.obj
-	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.i
-	@echo ... SearchingAlgorithms/Searchers/BestFirstSearch.s
-	@echo ... SearchingAlgorithms/Searchers/Searcher.obj
-	@echo ... SearchingAlgorithms/Searchers/Searcher.i
-	@echo ... SearchingAlgorithms/Searchers/Searcher.s
-	@echo ... SearchingAlgorithms/State.obj
-	@echo ... SearchingAlgorithms/State.i
-	@echo ... SearchingAlgorithms/State.s
 	@echo ... SearchingAlgorithms/StateComparator.obj
 	@echo ... SearchingAlgorithms/StateComparator.i
 	@echo ... SearchingAlgorithms/StateComparator.s

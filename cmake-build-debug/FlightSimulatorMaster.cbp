@@ -83,9 +83,6 @@
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Inteface.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.cpp">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.h">
 			<Option target="Project"/>
 		</Unit>
@@ -98,22 +95,13 @@
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.cpp">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/ISearcher.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.cpp">
-			<Option target="Project"/>
-		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.cpp">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h">

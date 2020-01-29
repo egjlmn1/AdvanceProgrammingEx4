@@ -37,6 +37,10 @@ CMakeFiles/Project.dir/SearchingAlgorithms/Searchers/Searcher.cpp.obj: ../Soluti
 CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj: ../SearchingAlgorithms/State.cpp
 CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.obj: ../SearchingAlgorithms/State.h
 
+CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj: ../SearchingAlgorithms/State.h
+CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj: ../SearchingAlgorithms/StateComparator.cpp
+CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj: ../SearchingAlgorithms/StateComparator.h
+
 CMakeFiles/Project.dir/main.cpp.obj: ../Inteface.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/MyPriorityQueue.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchable/ISearchable.h

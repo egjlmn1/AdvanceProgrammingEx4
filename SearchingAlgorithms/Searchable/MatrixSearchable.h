@@ -16,9 +16,12 @@ private:
 public:
     MatrixSearchable(int len, int wid, double **mat);
     void InitializeStates();
-    State<string>* GetInitialState();
-    State<string>* GetGoalState();
-    vector<State<string>*> GetAllPossibleStates(State<string>* s);
+
+    State<string> *GetInitialState() override;
+
+    State<string> *GetGoalState() override;
+
+    vector<State<string> *> GetAllPossibleStates(State<string> *s) override;
     int GetLengthByState(State<string>* state);
     int GetWidthByState(State<string>* state);
 

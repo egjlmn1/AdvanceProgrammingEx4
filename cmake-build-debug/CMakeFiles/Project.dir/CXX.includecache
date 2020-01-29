@@ -30,10 +30,6 @@ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchabl
 ISearchable.h
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h
 
-C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.cpp
-BestFirstSearch.h
-C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.h
-
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.h
 ../State.h
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
@@ -63,6 +59,8 @@ string
 -
 
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.h
+State.h
+C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
 
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/Solution.h
 vector
@@ -79,10 +77,6 @@ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/Solution.h
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/main.cpp
 iostream
 -
-thread
--
-Inteface.h
-C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Inteface.h
 SearchingAlgorithms/Searchable/MatrixSearchable.h
 C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h
 SearchingAlgorithms/Searchers/BestFirstSearch.h
