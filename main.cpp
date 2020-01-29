@@ -23,8 +23,7 @@ int main(int argc, char *argv[]) {
     mat[2][1] = 1;
     mat[2][2] = 0;
 
-    ISearchable<string> *searchable = new MatrixSearchable(3, 3, mat, < 0,
-    0 > , );
+    ISearchable<string> *searchable = new MatrixSearchable(3, 3, mat, pair<int, int>(0, 0), pair<int, int>(0, 0));
     DepthFirstSearch<string> *searcher = new DepthFirstSearch<string>();
 
     vector<State<string> *> sol = searcher->search(searchable);
