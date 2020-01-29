@@ -8,7 +8,6 @@ add_executable(Project
         main.cpp
 
         Inteface.h
-        Solutions/Solution.h Solutions/Solution.cpp
 
         SearchingAlgorithms/State.cpp
         SearchingAlgorithms/State.h
@@ -22,5 +21,4 @@ add_executable(Project
         SearchingAlgorithms/Searchers/BestFirstSearch.cpp
         SearchingAlgorithms/MyPriorityQueue.h
         SearchingAlgorithms/MyPriorityQueue.cpp
-        SearchingAlgorithms/StateComparator.h
-        SearchableSolutionAdapter/SearchableSolutionAdapter.cpp SearchableSolutionAdapter/SearchableSolutionAdapter.h Solutions/MatrixSolution.cpp Solutions/MatrixSolution.h)
+        SearchingAlgorithms/StateComparator.h SearchingAlgorithms/StateComparator.cpp)

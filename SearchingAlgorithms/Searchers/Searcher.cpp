@@ -4,39 +4,39 @@
 
 #include "Searcher.h"
 
-template <class T>
-Searcher<T>::Searcher() {
+template <class T, class Solution>
+Searcher<T, Solution>::Searcher() {
     this->openList = MyPriorityQueue<State<T>>();
     this->evaluatedNodes = 0;
 }
 
-template <class T>
-State<T> Searcher<T>::PopOpenList() {
+template <class T, class Solution>
+State<T> Searcher<T, Solution>::PopOpenList() {
     this->evaluatedNodes++;
     return openList.Pop();
 }
 
-template <class T>
-void Searcher<T>::PushOpenList(State<T>* state) {
+template <class T, class Solution>
+void Searcher<T, Solution>::PushOpenList(State<T>* state) {
     this->openList.Push(state);
 }
 
-template <class T>
-int Searcher<T>::OpenListSize() {
+template <class T, class Solution>
+int Searcher<T, Solution>::OpenListSize() {
     return openList->Count;
 }
 
-template <class T>
-int Searcher<T>::GetNumberOfNodesEvaluated() {
+template <class T, class Solution>
+int Searcher<T, Solution>::GetNumberOfNodesEvaluated() {
     return this->evaluatedNodes;
 }
 
-template <class T>
-bool Searcher<T>::IsInOpenList(State<T>* state) {
+template <class T, class Solution>
+bool Searcher<T, Solution>::IsInOpenList(State<T>* state) {
     return this->openList.IsInQueue(state);
 }
 
-template <class T>
-void Searcher<T>::UpdateQueue() {
+template <class T, class Solution>
+void Searcher<T, Solution>::UpdateQueue() {
     this->openList.Update();
 }

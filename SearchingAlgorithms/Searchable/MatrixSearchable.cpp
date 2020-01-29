@@ -48,28 +48,24 @@ vector<State<string>*> MatrixSearchable::GetAllPossibleStates(State<string> *s) 
         exit(1);
     }
 
-    switch (stateLen) {
-        case 0:
-            neighbors.push_back(this->states[stateLen + 1][stateWid]);
-            break;
-        case (this->length-1):
-            neighbors.push_back(this->states[stateLen - 1][stateWid]);
-            break;
-        default:
-            neighbors.push_back(this->states[stateLen + 1][stateWid]);
-            neighbors.push_back(this->states[stateLen - 1][stateWid]);
+    int len = this->length;
+
+    if (stateLen == 0) {
+        neighbors.push_back(this->states[stateLen + 1][stateWid]);
+    } else if (stateLen == this->length - 1) {
+        neighbors.push_back(this->states[stateLen - 1][stateWid]);
+    } else {
+        neighbors.push_back(this->states[stateLen - 1][stateWid]);
+        neighbors.push_back(this->states[stateLen + 1][stateWid]);
     }
 
-    switch (stateWid) {
-        case 0:
-            neighbors.push_back(this->states[stateLen][stateWid + 1]);
-            break;
-        case (this->length-1):
-            neighbors.push_back(this->states[stateLen][stateWid - 1]);
-            break;
-        default:
-            neighbors.push_back(this->states[stateLen][stateWid + 1]);
-            neighbors.push_back(this->states[stateLen][stateWid - 1]);
+    if (stateWid == 0) {
+        neighbors.push_back(this->states[stateLen][stateWid + 1]);
+    } else if (stateWid == this->length - 1) {
+        neighbors.push_back(this->states[stateLen][stateWid - 1]);
+    } else {
+        neighbors.push_back(this->states[stateLen][stateWid - 1]);
+        neighbors.push_back(this->states[stateLen][stateWid + 1]);
     }
 
     return neighbors;

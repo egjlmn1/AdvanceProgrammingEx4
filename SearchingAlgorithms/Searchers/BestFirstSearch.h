@@ -12,11 +12,11 @@
 template <class T>
 class BestFirstSearch : Searcher<T, vector<State<T>*>> {
 private:
-    unordered_set<State<T>> closed;
+    unordered_map<T, State<T>> closed;
 public:
     BestFirstSearch<T>();
-    vector<State<T>*> search(ISearchable<T> searchable);
-    vector<State<T>*> CreateSolution(ISearchable<T> searchable);
+    vector<State<T>*> search(ISearchable<T> *searchable);
+    vector<State<T>*> CreateSolution(ISearchable<T> *searchable);
 };
 
 #endif //FLIGHTSIMULATORMASTER_BESTFIRSTSEARCH_H

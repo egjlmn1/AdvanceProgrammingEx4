@@ -7,7 +7,7 @@
 
 #include "ISearchable.h"
 
-class MatrixSearchable : ISearchable<string> {
+class MatrixSearchable : public ISearchable<string> {
 private:
     int length;
     int width;

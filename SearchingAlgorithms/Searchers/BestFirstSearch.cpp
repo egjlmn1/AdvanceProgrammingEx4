@@ -5,16 +5,16 @@
 #include "BestFirstSearch.h"
 
 template <class T>
-vector<State<T>*> BestFirstSearch<T>::search(ISearchable<T> searchable) {
-    this->PushOpenList(searchable.GetInitialState());
+vector<State<T>*> BestFirstSearch<T>::search(ISearchable<T> *searchable) {
+    this->PushOpenList(searchable->GetInitialState());
     while (this->OpenListSize() > 0) {
         State<T>* n = this->PopOpenList();
-        this->closed.insert(n);
-        if (n->Equals(searchable.GetGoalState())) {
+        this->closed.insert(n->GetState(), n);
+        if (n->Equals(searchable->GetGoalState())) {
             return this->CreateSolution();
         }
 
-        vector<State<T>*> successors = searchable.GetAllPossibleStates(n);
+        vector<State<T>*> successors = searchable->GetAllPossibleStates(n);
 
 
         for (State<T>* state : successors) {
@@ -44,7 +44,7 @@ vector<State<T>*> BestFirstSearch<T>::search(ISearchable<T> searchable) {
 }
 
 template <class T>
-vector<State<T>*> BestFirstSearch<T>::CreateSolution(ISearchable<T> searchable) {
+vector<State<T>*> BestFirstSearch<T>::CreateSolution(ISearchable<T> *searchable) {
     vector<State<T> *> solution;
     State<T> *last = searchable.GetGoalState();
 

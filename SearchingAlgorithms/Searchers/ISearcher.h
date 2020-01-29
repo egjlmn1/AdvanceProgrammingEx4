@@ -8,9 +8,9 @@
 #include "../Searchable/ISearchable.h"
 #include "../../Solutions/StringSolution.h"
 
-template <class T>
+template <class T, class Solution>
 class ISearcher {
-    virtual StringSolution search(ISearchable<T> searchable) = 0;
+    virtual Solution search(ISearchable<T> *searchable) = 0;
     virtual int GetNumberOfNodesEvaluated() = 0;
 };
 
