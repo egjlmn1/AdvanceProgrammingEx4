@@ -6,6 +6,5 @@
 
 template <class T>
 bool StateComparator<T>::operator()(State<T> *s1, State<T> *s2) {
-    return (s1->GetCost() >
-    s2->GetCost());
+    return (s1->GetCost() > s2->GetCost());
 }
