@@ -1,18 +1,24 @@
+
+
 #include <iostream>
-#include <thread>
 
-
-#include "Solutions/StringSolution.h"
-#include "Solvers/StringReverser.h"
-#include "Problems/StringProblem.h"
-#include "Inteface.h"
+#include "FileCacheManager.h"
+#include "MyTestClientHandler.h"
+#include "MyParallelServer.h"
 
 /*
  * Main function.
  */
 int main(int argc, char *argv[]) {
-
-    StringReverser* s = new StringReverser();
-    string sol = s->solve(StringProblem("123")).get_string();
-    cout << sol << endl;
+    MyParallelServer s;
+    try {
+        if (argc == 2) {
+            s.open(atoi(argv[1]), new MyTestClientHandler());
+        } else {
+            s.open(5411, new MyTestClientHandler());
+        }
+    } catch (const char* e) {
+        cout << e << endl;
+    }
+    return 0;
 }

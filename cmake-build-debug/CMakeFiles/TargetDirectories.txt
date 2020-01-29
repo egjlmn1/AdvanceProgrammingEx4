@@ -1,0 +1,3 @@
+/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/AdvanceProgrammingEx4.dir
+/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/CMakeFiles/edit_cache.dir

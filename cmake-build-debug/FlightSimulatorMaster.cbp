@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FlightSimulatorMaster"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AdvanceProgrammingEx4">
+				<Option output="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/AdvanceProgrammingEx4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 AdvanceProgrammingEx4"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AdvanceProgrammingEx4/fast">
+				<Option output="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/AdvanceProgrammingEx4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 AdvanceProgrammingEx4/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/FileCacheManager.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/FileCacheManager.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Interfaces.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MyParallelServer.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MyParallelServer.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MySerialServer.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MySerialServer.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MyTestClientHandler.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/MyTestClientHandler.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Problems/StringProblem.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Problems/StringProblem.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/ISearcher.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/State.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solutions/Solution.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solutions/Solution.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solutions/StringSolution.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solutions/StringSolution.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solvers/StringReverser.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/Solvers/StringReverser.h">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/main.cpp">
+			<Option target="AdvanceProgrammingEx4"/>
+		</Unit>
+		<Unit filename="/home/egjlmn1/Desktop/main/AdvanceProgrammin/ex4/AdvanceProgrammingEx4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

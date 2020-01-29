@@ -5,7 +5,8 @@
 #ifndef EX4_STRINGSOLUTION_H
 #define EX4_STRINGSOLUTION_H
 
-#include "../Inteface.h"
+#include "../Interfaces.h"
+#include "Solution.h"
 
 class StringSolution {
     string solution;
@@ -15,6 +16,7 @@ public:
     string to_string() {return solution;}
 
 };
+
 
 
 #endif //EX4_STRINGSOLUTION_H
