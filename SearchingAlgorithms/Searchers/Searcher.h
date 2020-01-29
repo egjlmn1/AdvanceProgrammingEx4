@@ -10,7 +10,7 @@
 #include "../MyPriorityQueue.h"
 #include "../../Solutions/Solution.h"
 
-template <class T>
+template <class T, class Solution>
 class Searcher : ISearcher<T> {
 private:
     MyPriorityQueue<State<T>> openList;
@@ -24,7 +24,7 @@ public:
     int OpenListSize();
     int GetNumberOfNodesEvaluated();
     void UpdateQueue();
-    virtual Solution<T> search(ISearchable<T> searchable) = 0;
+    virtual Solution search(ISearchable<T> searchable) = 0;
 };
 
 #endif //FLIGHTSIMULATORMASTER_SEARCHER_H

@@ -122,6 +122,33 @@ Project/fast:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+SearchableSolutionAdapter/SearchableSolutionAdapter.obj: SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.obj
+
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.obj
+
+# target to build an object file
+SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.obj
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.obj
+
+SearchableSolutionAdapter/SearchableSolutionAdapter.i: SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.i
+
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.i
+
+# target to preprocess a source file
+SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.i
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.i
+
+SearchableSolutionAdapter/SearchableSolutionAdapter.s: SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.s
+
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.s
+
+# target to generate assembly for a file
+SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.s
+.PHONY : SearchableSolutionAdapter/SearchableSolutionAdapter.cpp.s
+
 SearchingAlgorithms/MyPriorityQueue.obj: SearchingAlgorithms/MyPriorityQueue.cpp.obj
 
 .PHONY : SearchingAlgorithms/MyPriorityQueue.obj
@@ -257,6 +284,33 @@ SearchingAlgorithms/State.cpp.s:
 	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/SearchingAlgorithms/State.cpp.s
 .PHONY : SearchingAlgorithms/State.cpp.s
 
+Solutions/MatrixSolution.obj: Solutions/MatrixSolution.cpp.obj
+
+.PHONY : Solutions/MatrixSolution.obj
+
+# target to build an object file
+Solutions/MatrixSolution.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/MatrixSolution.cpp.obj
+.PHONY : Solutions/MatrixSolution.cpp.obj
+
+Solutions/MatrixSolution.i: Solutions/MatrixSolution.cpp.i
+
+.PHONY : Solutions/MatrixSolution.i
+
+# target to preprocess a source file
+Solutions/MatrixSolution.cpp.i:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/MatrixSolution.cpp.i
+.PHONY : Solutions/MatrixSolution.cpp.i
+
+Solutions/MatrixSolution.s: Solutions/MatrixSolution.cpp.s
+
+.PHONY : Solutions/MatrixSolution.s
+
+# target to generate assembly for a file
+Solutions/MatrixSolution.cpp.s:
+	$(MAKE) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Solutions/MatrixSolution.cpp.s
+.PHONY : Solutions/MatrixSolution.cpp.s
+
 Solutions/Solution.obj: Solutions/Solution.cpp.obj
 
 .PHONY : Solutions/Solution.obj
@@ -320,6 +374,9 @@ help:
 	@echo ... Project
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... SearchableSolutionAdapter/SearchableSolutionAdapter.obj
+	@echo ... SearchableSolutionAdapter/SearchableSolutionAdapter.i
+	@echo ... SearchableSolutionAdapter/SearchableSolutionAdapter.s
 	@echo ... SearchingAlgorithms/MyPriorityQueue.obj
 	@echo ... SearchingAlgorithms/MyPriorityQueue.i
 	@echo ... SearchingAlgorithms/MyPriorityQueue.s
@@ -335,6 +392,9 @@ help:
 	@echo ... SearchingAlgorithms/State.obj
 	@echo ... SearchingAlgorithms/State.i
 	@echo ... SearchingAlgorithms/State.s
+	@echo ... Solutions/MatrixSolution.obj
+	@echo ... Solutions/MatrixSolution.i
+	@echo ... Solutions/MatrixSolution.s
 	@echo ... Solutions/Solution.obj
 	@echo ... Solutions/Solution.i
 	@echo ... Solutions/Solution.s

@@ -23,4 +23,4 @@ add_executable(Project
         SearchingAlgorithms/MyPriorityQueue.h
         SearchingAlgorithms/MyPriorityQueue.cpp
         SearchingAlgorithms/StateComparator.h
-        )
+        SearchableSolutionAdapter/SearchableSolutionAdapter.cpp SearchableSolutionAdapter/SearchableSolutionAdapter.h Solutions/MatrixSolution.cpp Solutions/MatrixSolution.h)

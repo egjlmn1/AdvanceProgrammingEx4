@@ -83,6 +83,12 @@
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Inteface.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchableSolutionAdapter/SearchableSolutionAdapter.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchableSolutionAdapter/SearchableSolutionAdapter.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -120,6 +126,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/StateComparator.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/MatrixSolution.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/MatrixSolution.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/Solutions/Solution.cpp">

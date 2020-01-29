@@ -5,41 +5,40 @@
 #include <iostream>
 #include "MatrixSearchable.h"
 
-template <class T>
-MatrixSearchable<T>::MatrixSearchable(int len, int wid, double **mat) {
+MatrixSearchable::MatrixSearchable(int len, int wid, double **mat) {
     this->length = len;
     this->width = wid;
     this->matrix = mat;
     this->InitializeStates();
 }
 
-template <class T>
-void MatrixSearchable<T>::InitializeStates() {
-    this->states = (State<T>***) malloc(this->length * sizeof(State<T>**));
+
+void MatrixSearchable::InitializeStates() {
+    this->states = (State<string>***) malloc(this->length * sizeof(State<string>**));
     for (int i = 0; i < this->length; i++) {
-        this->states[i] = (State<T>**) malloc(this->width * sizeof(State<T>*));
+        this->states[i] = (State<string>**) malloc(this->width * sizeof(State<string>*));
     }
 
     for (int i = 0; i < this->length; i++) {
         for (int j = 0; j < this->width; i++) {
-            this->states[i][j] = new State<T>(to_string(i) + " " + to_string(j), matrix[i][j]);
+            this->states[i][j] = new State<string>(to_string(i) + " " + to_string(j), matrix[i][j]);
         }
     }
 }
 
-template <class T>
-State<T>* MatrixSearchable<T>::GetInitialState() {
+
+State<string>* MatrixSearchable::GetInitialState() {
     return this->states[0][0];
 }
 
-template <class T>
-State<T>* MatrixSearchable<T>::GetGoalState() {
+
+State<string>* MatrixSearchable::GetGoalState() {
     return this->states[this->length-1][this->width-1];
 }
 
-template <class T>
-vector<State<T>*> MatrixSearchable<T>::GetAllPossibleStates(State<T> *s) {
-    vector<State<T>*> neighbors;
+
+vector<State<string>*> MatrixSearchable::GetAllPossibleStates(State<string> *s) {
+    vector<State<string>*> neighbors;
     int stateLen = this->GetLengthByState(s);
     int stateWid = this->GetWidthByState(s);
 
@@ -76,8 +75,8 @@ vector<State<T>*> MatrixSearchable<T>::GetAllPossibleStates(State<T> *s) {
     return neighbors;
 }
 
-template <class T>
-int MatrixSearchable<T>::GetLengthByState(State<T> *s) {
+
+int MatrixSearchable::GetLengthByState(State<string> *s) {
     int len = this->length;
     for (int i = 0; i < this->length; i++) {
         for (int j = 0; j < this->width; i++) {
@@ -89,8 +88,8 @@ int MatrixSearchable<T>::GetLengthByState(State<T> *s) {
     return len;
 }
 
-template <class T>
-int MatrixSearchable<T>::GetWidthByState(State<T> *s) {
+
+int MatrixSearchable::GetWidthByState(State<string> *s) {
     int wid = this->width;
     for (int i = 0; i < this->length; i++) {
         for (int j = 0; j < this->width; i++) {

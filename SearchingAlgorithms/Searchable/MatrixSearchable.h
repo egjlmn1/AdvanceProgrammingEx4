@@ -7,21 +7,20 @@
 
 #include "ISearchable.h"
 
-template <class T>
-class MatrixSearchable : ISearchable<T> {
+class MatrixSearchable : ISearchable<string> {
 private:
     int length;
     int width;
     double **matrix;
-    State<T>*** states;
+    State<string>*** states;
 public:
     MatrixSearchable(int len, int wid, double **mat);
     void InitializeStates();
-    State<T>* GetInitialState() = 0;
-    State<T>* GetGoalState() = 0;
-    vector<State<T>*> GetAllPossibleStates(State<T>* s) = 0;
-    int GetLengthByState(State<T>* state);
-    int GetWidthByState(State<T>* state);
+    State<string>* GetInitialState();
+    State<string>* GetGoalState();
+    vector<State<string>*> GetAllPossibleStates(State<string>* s);
+    int GetLengthByState(State<string>* state);
+    int GetWidthByState(State<string>* state);
 
 };
 

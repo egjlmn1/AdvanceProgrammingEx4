@@ -10,13 +10,13 @@
 #include <bits/stdc++.h>
 
 template <class T>
-class BestFirstSearch : Searcher<T> {
+class BestFirstSearch : Searcher<T, vector<State<T>*>> {
 private:
     unordered_set<State<T>> closed;
 public:
     BestFirstSearch<T>();
-    Solution<T>* search(ISearchable<T> searchable);
-    Solution<T>* CreateSolution(ISearchable<T> searchable);
+    vector<State<T>*> search(ISearchable<T> searchable);
+    vector<State<T>*> CreateSolution(ISearchable<T> searchable);
 };
 
 #endif //FLIGHTSIMULATORMASTER_BESTFIRSTSEARCH_H
