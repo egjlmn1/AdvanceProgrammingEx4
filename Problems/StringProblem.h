@@ -6,7 +6,7 @@
 #define EX4_STRINGPROBLEM_H
 
 
-#include "../Inteface.h"
+#include "../Interfaces.h"
 
 class StringProblem {
     string problem;

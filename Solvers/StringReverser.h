@@ -5,7 +5,7 @@
 #ifndef EX4_STRINGREVERSER_H
 #define EX4_STRINGREVERSER_H
 
-#include "../Inteface.h"
+#include "../Interfaces.h"
 #include "../Problems/StringProblem.h"
 #include "../Solutions/StringSolution.h"
 

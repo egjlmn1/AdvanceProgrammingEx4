@@ -5,11 +5,10 @@
 #ifndef EX4_STRINGSOLUTION_H
 #define EX4_STRINGSOLUTION_H
 
-#include "../Inteface.h"
+#include "../Interfaces.h"
 #include "Solution.h"
 
-template <class T>
-class StringSolution : Solution<T> {
+class StringSolution {
     string solution;
 public:
     StringSolution(const string &solution) : solution(solution) {}
@@ -17,6 +16,7 @@ public:
     string to_string() {return solution;}
 
 };
+
 
 
 #endif //EX4_STRINGSOLUTION_H

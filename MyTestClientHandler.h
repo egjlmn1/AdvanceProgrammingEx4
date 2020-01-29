@@ -5,11 +5,15 @@
 #ifndef FLIGHTSIMULATORMASTER_MYTESTCLIENTHANDLER_H
 #define FLIGHTSIMULATORMASTER_MYTESTCLIENTHANDLER_H
 
-#include "Inteface.h"
+#include "Interfaces.h"
+#include "vector"
 
 using namespace client_side;
-class MyTestClientHandler : ClientHandler{
-    void handleClient(std::streambuf input_stream, std::streambuf output_stream) override;
+class MyTestClientHandler : public ClientHandler{
+    void create_problem(const string& data, int socket);
+    vector<string> split(string data, char to_split);
+public:
+    void handleClient(int client_socket) override;
 };
 
 
