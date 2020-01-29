@@ -11,10 +11,13 @@ class MatrixSearchable : public ISearchable<string> {
 private:
     int length;
     int width;
-    double **matrix;
-    State<string>*** states;
+    double *matrix;
+    pair<int, int> start;
+    pair<int, int> end;
+    State<string> ***states;
 public:
-    MatrixSearchable(int len, int wid, double **mat);
+    MatrixSearchable(int len, int wid, double *mat, pair<int, int>, pair<int, int>);
+
     void InitializeStates();
 
     State<string> *GetInitialState() override;
@@ -22,8 +25,12 @@ public:
     State<string> *GetGoalState() override;
 
     vector<State<string> *> GetAllPossibleStates(State<string> *s) override;
-    int GetLengthByState(State<string>* state);
-    int GetWidthByState(State<string>* state);
+
+    int GetLengthByState(State<string> *state);
+
+    int GetWidthByState(State<string> *state);
+
+    double CalcHeuristic(State<string> *state);
 
 };
 

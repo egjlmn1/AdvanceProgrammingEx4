@@ -6,7 +6,7 @@
 #define MITKADEM4_DEPTHFIRSTSEARCH_H
 
 #include <unordered_set>
-#include <queue>
+#include <stack>
 #include <algorithm>
 
 #include "Searcher.h"
@@ -24,16 +24,16 @@ public:
 
 template<class T>
 vector<State<T> *> DepthFirstSearch<T>::search(ISearchable<T> *searchable) {
-    queue<State<T> *> queue;
+    stack<State<T> *> stack;
     unordered_set<T> visited;
 
     State<T> *n = searchable->GetInitialState();
-    queue.push(n);
+    stack.push(n);
     visited.insert(n->GetState());
 
-    while (!queue.empty()) {
-        auto s = queue.front();
-        queue.pop();
+    while (!stack.empty()) {
+        auto s = stack.top();
+        stack.pop();
 
         vector<State<T> *> neighbors = searchable->GetAllPossibleStates(s);
 
@@ -41,7 +41,7 @@ vector<State<T> *> DepthFirstSearch<T>::search(ISearchable<T> *searchable) {
             if (state->GetCost() != -1 && visited.find(state->GetState()) == visited.end()) {
                 state->UpdatePrevious(s);
                 visited.insert(state->GetState());
-                queue.push(state);
+                stack.push(state);
 
                 if (state->Equals(searchable->GetGoalState())) {
                     return CreateSolution(searchable);

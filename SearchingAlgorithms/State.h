@@ -14,9 +14,10 @@ class State {
 private:
     T state;
     double cost;
+    double heuristic;
     State<T>* cameFrom;
 public:
-    State(T state, double cost);
+    State(T state, double cost, double heuristic);
     virtual bool Equals(State<T>* s);
     T GetState();
     double GetCost();
@@ -26,9 +27,10 @@ public:
 };
 
 template<class T>
-State<T>::State(T state, double cost) {
+State<T>::State(T state, double cost, double heuristic) {
     this->state = state;
     this->cost = cost;
+    this > heuristic = heuristic;
     this->cameFrom = NULL;
 }
 

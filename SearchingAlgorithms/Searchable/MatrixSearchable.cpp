@@ -6,40 +6,43 @@
 #include "../State.h"
 #include "MatrixSearchable.h"
 
-MatrixSearchable::MatrixSearchable(int len, int wid, double **mat) {
+MatrixSearchable::MatrixSearchable(int len, int wid, double *mat, pair<int, int> start, pair<int, int> end) {
     this->length = len;
     this->width = wid;
     this->matrix = mat;
+    this->start = start;
+    this->end = end;
     this->InitializeStates();
 }
 
 
 void MatrixSearchable::InitializeStates() {
-    this->states = (State<string>***) malloc(this->length * sizeof(State<string>**));
+    this->states = (State<string> ***) malloc(this->length * sizeof(State<string> **));
     for (int i = 0; i < this->length; i++) {
-        this->states[i] = (State<string>**) malloc(this->width * sizeof(State<string>*));
+        this->states[i] = (State<string> **) malloc(this->width * sizeof(State<string> *));
     }
 
     for (int i = 0; i < this->length; i++) {
         for (int j = 0; j < this->width; j++) {
-            this->states[i][j] = new State<string>(to_string(i) + " " + to_string(j), matrix[i][j]);
+            this->states[i][j] = new State<string>(to_string(i) + " " + to_string(j),
+                                                   matrix[i * this->length + j], CalcHeuristic(i, j));
         }
     }
 }
 
 
-State<string>* MatrixSearchable::GetInitialState() {
-    return this->states[0][0];
+State<string> *MatrixSearchable::GetInitialState() {
+    return this->states[this->start.first][this->start.second];
 }
 
 
-State<string>* MatrixSearchable::GetGoalState() {
-    return this->states[this->length-1][this->width-1];
+State<string> *MatrixSearchable::GetGoalState() {
+    return this->states[this->end.first][this->end.second];
 }
 
 
-vector<State<string>*> MatrixSearchable::GetAllPossibleStates(State<string> *s) {
-    vector<State<string>*> neighbors;
+vector<State<string> *> MatrixSearchable::GetAllPossibleStates(State<string> *s) {
+    vector<State<string> *> neighbors;
     int stateLen = this->GetLengthByState(s);
     int stateWid = this->GetWidthByState(s);
 
@@ -48,8 +51,6 @@ vector<State<string>*> MatrixSearchable::GetAllPossibleStates(State<string> *s) 
         cerr << "Error in matrix searchable get all possible states" << endl;
         exit(1);
     }
-
-    int len = this->length;
 
     if (stateLen == 0) {
         neighbors.push_back(this->states[stateLen + 1][stateWid]);
@@ -85,7 +86,11 @@ int MatrixSearchable::GetLengthByState(State<string> *s) {
     return len;
 }
 
-
+/**
+ * Returns the y value of state in matrix
+ * @param s- the state
+ * @return the y value of state in matrix
+ */
 int MatrixSearchable::GetWidthByState(State<string> *s) {
     int wid = this->width;
     for (int i = 0; i < this->length; i++) {
@@ -96,4 +101,10 @@ int MatrixSearchable::GetWidthByState(State<string> *s) {
         }
     }
     return wid;
+
+}
+
+double MatrixSearchable::CalcHeuristic(int i, int j) {
+    // manhattan distance
+    return abs(i - this->end.first) + abs(j - this->end.second);
 }

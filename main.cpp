@@ -2,7 +2,7 @@
 
 #include "SearchingAlgorithms/State.h"
 #include "SearchingAlgorithms/Searchable/MatrixSearchable.h"
-#include "SearchingAlgorithms/Searchers/BreadthFirstSearch.h"
+#include "SearchingAlgorithms/Searchers/DepthFirstSearch.h"
 
 /*
  * Main function.
@@ -23,8 +23,9 @@ int main(int argc, char *argv[]) {
     mat[2][1] = 1;
     mat[2][2] = 0;
 
-    ISearchable<string> *searchable = new MatrixSearchable(3, 3, mat);
-    BreadthFirstSearch<string> *searcher = new BreadthFirstSearch<string>();
+    ISearchable<string> *searchable = new MatrixSearchable(3, 3, mat, < 0,
+    0 > , );
+    DepthFirstSearch<string> *searcher = new DepthFirstSearch<string>();
 
     vector<State<string> *> sol = searcher->search(searchable);
 
