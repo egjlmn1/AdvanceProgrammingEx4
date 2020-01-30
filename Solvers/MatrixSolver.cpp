@@ -3,13 +3,13 @@
 //
 
 #include "MatrixSolver.h"
-#include "../SearchingAlgorithms/Searchers/BestFirstSearch.h"
+#include "../SearchingAlgorithms/Searchers/AStar.h"
 
 StringSolution MatrixSolver::solve(MatrixProblem& problem) {
     MatrixSearchable *searchable = new MatrixSearchable(
             problem.get_length(), problem.get_width(), problem.get_matrix(), problem.get_start(), problem.get_end());
 
-    BestFirstSearch<string> *searcher = new BestFirstSearch<string>();
+    AStar<string> *searcher = new AStar<string>();
 
     vector<State<string> *> solution_path = searcher->search(searchable);
 

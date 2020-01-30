@@ -6,12 +6,12 @@
 #include "../State.h"
 #include "MatrixSearchable.h"
 
-MatrixSearchable::MatrixSearchable(int len, int wid, double *mat, pair<int, int> *start, pair<int, int> *end) {
+MatrixSearchable::MatrixSearchable(int len, int wid, double *mat, std::pair<int, int> start, std::pair<int, int> end) {
     this->length = len;
     this->width = wid;
     this->matrix = mat;
-    this->start = *start;
-    this->end = *end;
+    this->start = start;
+    this->end = end;
     this->InitializeStates();
 }
 
@@ -107,10 +107,6 @@ int MatrixSearchable::GetWidthByState(State<string> *s) {
 double MatrixSearchable::CalcHeuristic(int i, int j) {
     // manhattan distance
     return (i - this->end.first) * (i - this->end.first) + (j - this->end.second) * (j - this->end.second);
-}
-
-MatrixSearchable::MatrixSearchable() {
-
 }
 
 string MatrixSearchable::to_string() {

@@ -50,7 +50,7 @@ void MyParallelServer::client_listening() {
         int client_socket = accept(socketfd, (struct sockaddr *)&address,
                                    (socklen_t*)&address);
         if (client_socket == -1) {
-            cerr << "Error accepting client" << endl;
+            cout << "Timeout" << endl;
             return;
         }
         //handle client

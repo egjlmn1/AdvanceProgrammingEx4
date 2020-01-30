@@ -20,11 +20,19 @@ add_executable(AdvanceProgrammingEx4
         MyParallelServer.cpp MyParallelServer.h
 
         SearchingAlgorithms/State.h
+        SearchingAlgorithms/MyPriorityQueue.h
+        SearchingAlgorithms/StateComparator.h
+
         SearchingAlgorithms/Searchable/ISearchable.h
         SearchingAlgorithms/Searchable/MatrixSearchable.h
         SearchingAlgorithms/Searchable/MatrixSearchable.cpp
+
         SearchingAlgorithms/Searchers/ISearcher.h
         SearchingAlgorithms/Searchers/Searcher.h
         SearchingAlgorithms/Searchers/BestFirstSearch.h
-        SearchingAlgorithms/MyPriorityQueue.h
-        SearchingAlgorithms/StateComparator.h Solvers/MatrixSolver.cpp Solvers/MatrixSolver.h Problems/MatrixProblem.cpp Problems/MatrixProblem.h)
+        SearchingAlgorithms/Searchers/BreadthFirstSearch.h
+        SearchingAlgorithms/Searchers/DepthFirstSearch.h
+        SearchingAlgorithms/Searchers/AStar.h
+
+        Solvers/MatrixSolver.cpp Solvers/MatrixSolver.h
+        Problems/MatrixProblem.cpp Problems/MatrixProblem.h SearchingAlgorithms/AddHeuristicComparator.h)

@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <unordered_set>
+#include <iostream>
 #include "../State.h"
 #include "Searcher.h"
 #include "../AddHeuristicComparator.h"
@@ -36,6 +37,7 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
 
     this->PushOpenList(searchable->GetInitialState());
     while (this->OpenListSize() > 0) {
+        cout << "in while" << this->OpenListSize() << endl;
         this->evaluatedNodes++;
         State<T> *n = this->PopOpenList();
         this->closed.insert(n->GetState());
@@ -45,47 +47,27 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
         }
 
         vector<State<T> *> successors = searchable->GetAllPossibleStates(n);
-
+        cout << "entering for" << endl;
         for (State<T> *state : successors) {
+            cout << "state" << endl;
             if (state->GetCost() == -1) {
                 continue;
             }
 
-            if (state->GetCost() + n->GetRouteCost() < state->GetRouteCost()) {
+            if ((state->GetCost() + n->GetRouteCost()) < state->GetRouteCost()) {
                 state->UpdatePrevious(n);
                 state->UpdateRouteCost(n->GetRouteCost() + state->GetCost());
                 this->PushOpenList(state);
                 this->UpdateQueue();
 
                 if (!this->IsInOpenList(state)) {
+                    cout << "pushed" << endl;
                     this->PushOpenList(state);
                 }
             }
-
-            /*
-            if (!searchable->GetInitialState()->Equals(n)) {
-                if (n->GetPrevious()->Equals(state)) {
-                    continue;
-                }
-            }
-
-            if (!this->IsInOpenList(state)) {
-                state->UpdatePrevious(n);
-                state->UpdateRouteCost(n->GetRouteCost() + state->GetCost());
-                this->PushOpenList(state);
-                this->UpdateQueue();
-            } else {
-                double newCost = state->GetCost() + n->GetRouteCost();
-                if (newCost < state->GetCost()) {
-
-                    state->UpdatePrevious(n);
-                    state->UpdateRouteCost(newCost);
-                    this->UpdateQueue();
-                }
-            }
-             */
         }
     }
+    cerr << "should not have reached hear" << endl;
     return vector<State<T> *>();
 }
 
