@@ -21,7 +21,6 @@ public:
     State<T>* Pop();
     int GetSize();
     bool IsInQueue(State<T>* n);
-
     void Empty() {
         while (!this->queue.empty()) {
             this->queue.pop();

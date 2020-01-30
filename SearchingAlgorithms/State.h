@@ -25,11 +25,8 @@ public:
     State<T>* GetPrevious();
     void UpdateCost(double newCost);
     void UpdatePrevious(State<T>* prev);
-
     double GetHeuristic();
-
     void UpdateRouteCost(double c);
-
     double GetRouteCost();
 };
 

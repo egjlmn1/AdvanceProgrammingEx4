@@ -33,6 +33,8 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
     this->evaluatedNodes = 0;
     this->closed.clear();
     this->EmptyQueue();
+    searchable->Reset();
+    searchable->GetInitialState()->UpdateRouteCost(searchable->GetInitialState()->GetCost());
 
     this->PushOpenList(searchable->GetInitialState());
     while (this->OpenListSize() > 0) {
@@ -40,52 +42,33 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
         State<T> *n = this->PopOpenList();
         this->closed.insert(n->GetState());
 
+        if (n->GetCost() == -1) {
+            cout << "Uh oh: -1 in bad spot" << endl;
+        }
+
         if (n->Equals(searchable->GetGoalState())) {
             return this->CreateSolution(searchable);
         }
 
         vector<State<T> *> successors = searchable->GetAllPossibleStates(n);
-
         for (State<T> *state : successors) {
-            if (state->GetCost() == -1) {
+            if (state->GetCost() == -1 || this->closed.find(state->GetState()) != this->closed.end()) {
                 continue;
             }
 
-            if (state->GetCost() + n->GetRouteCost() < state->GetRouteCost()) {
-                state->UpdatePrevious(n);
-                state->UpdateRouteCost(n->GetRouteCost() + state->GetCost());
-                this->PushOpenList(state);
-                this->UpdateQueue();
+            double newCost = n->GetRouteCost() + state->GetCost();
 
+            if (newCost < state->GetRouteCost()) {
+                state->UpdatePrevious(n);
+                state->UpdateRouteCost(newCost);
                 if (!this->IsInOpenList(state)) {
                     this->PushOpenList(state);
                 }
-            }
-
-            /*
-            if (!searchable->GetInitialState()->Equals(n)) {
-                if (n->GetPrevious()->Equals(state)) {
-                    continue;
-                }
-            }
-
-            if (!this->IsInOpenList(state)) {
-                state->UpdatePrevious(n);
-                state->UpdateRouteCost(n->GetRouteCost() + state->GetCost());
-                this->PushOpenList(state);
                 this->UpdateQueue();
-            } else {
-                double newCost = state->GetCost() + n->GetRouteCost();
-                if (newCost < state->GetCost()) {
-
-                    state->UpdatePrevious(n);
-                    state->UpdateRouteCost(newCost);
-                    this->UpdateQueue();
-                }
             }
-             */
         }
     }
+    cout << "Got stuck" << endl;
     return vector<State<T> *>();
 }
 

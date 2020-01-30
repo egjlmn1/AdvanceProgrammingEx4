@@ -35,6 +35,8 @@ public:
     MatrixSearchable();
 
     string to_string();
+
+    void Reset();
 };
 
 #endif //FLIGHTSIMULATORMASTER_MATRIXSEARCHABLE_H

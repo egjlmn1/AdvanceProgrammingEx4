@@ -31,6 +31,7 @@ vector<State<T> *> DepthFirstSearch<T>::search(ISearchable<T> *searchable) {
     stack<State<T> *> stack;
     unordered_set<T> visited;
     this->evaluatedNodes = 0;
+    searchable->Reset();
 
     State<T> *n = searchable->GetInitialState();
     stack.push(n);

@@ -23,7 +23,6 @@ public:
     State<T> *PopOpenList();
     bool IsInOpenList(State<T>* state);
     int OpenListSize();
-
     void EmptyQueue() {
         this->openList.Empty();
     }

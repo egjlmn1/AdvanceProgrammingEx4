@@ -31,6 +31,7 @@ vector<State<T> *> BreadthFirstSearch<T>::search(ISearchable<T> *searchable) {
     queue < State<T> * > queue;
     unordered_set <T> visited;
     this->evaluatedNodes = 0;
+    searchable->Reset();
 
     State<T> *n = searchable->GetInitialState();
     queue.push(n);
