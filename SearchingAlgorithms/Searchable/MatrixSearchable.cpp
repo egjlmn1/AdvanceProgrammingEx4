@@ -28,6 +28,8 @@ void MatrixSearchable::InitializeStates() {
                                                    matrix[i * this->length + j], CalcHeuristic(i, j));
         }
     }
+
+    this->Reset();
 }
 
 
@@ -133,4 +135,13 @@ string MatrixSearchable::to_string() {
         }
     }
     return s;
+}
+
+void MatrixSearchable::Reset() {
+    for (int i = 0; i < this->length; ++i) {
+        for (int j = 0; j < this->width; ++j) {
+            states[i][j]->UpdateCost(this->matrix[i * this->length + j]);
+            states[i][j]->UpdateRouteCost(INT32_MAX);
+        }
+    }
 }

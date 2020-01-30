@@ -33,6 +33,8 @@ public:
     double CalcHeuristic(int i, int j);
 
     string to_string();
+
+    void Reset();
 };
 
 #endif //FLIGHTSIMULATORMASTER_MATRIXSEARCHABLE_H
