@@ -35,7 +35,7 @@ Now we can run the program.‬‬
 Compile the program using the g++ compiler with the line
 
 ```bash
-g++ -std=c++14 *.cpp */*.cpp */*/*.cpp */*/*/*.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
+g++ -std=c++14 */*.cpp */*/*.cpp */*/*/*.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
 ```
 
 Then, execute that program while passing the port you want to bind as an argument:
