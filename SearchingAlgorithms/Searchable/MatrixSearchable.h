@@ -16,7 +16,7 @@ private:
     pair<int, int> end;
     State<string> ***states;
 public:
-    MatrixSearchable(int len, int wid, double *mat, pair<int, int> s, pair<int, int> e);
+    MatrixSearchable(int len, int wid, double *mat, pair<int, int> *s, pair<int, int> *e);
 
     void InitializeStates();
 
@@ -32,6 +32,9 @@ public:
 
     double CalcHeuristic(int i, int j);
 
+    MatrixSearchable();
+
+    string to_string();
 };
 
 #endif //FLIGHTSIMULATORMASTER_MATRIXSEARCHABLE_H

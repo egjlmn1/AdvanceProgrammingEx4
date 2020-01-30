@@ -11,7 +11,7 @@ template <class T>
 class StateComparator {
 public:
     bool operator()(State<T> *s1, State<T> *s2) {
-        return (s1->GetCost() > s2->GetCost());
+        return (s1->GetRouteCost() > s2->GetRouteCost());
     }
 };
 
