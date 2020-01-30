@@ -13,6 +13,7 @@ template<class T, class Solution, class Comparator>
 class Searcher : public ISearcher<T, Solution> {
 private:
     MyPriorityQueue<T, Comparator> openList;
+protected:
     int evaluatedNodes;
 
 public:
@@ -22,9 +23,15 @@ public:
     State<T> *PopOpenList();
     bool IsInOpenList(State<T>* state);
     int OpenListSize();
-    int GetNumberOfNodesEvaluated();
+
+    void EmptyQueue() {
+        this->openList.Empty();
+    }
+
     void UpdateQueue();
     virtual Solution search(ISearchable<T> *searchable) = 0;
+
+    virtual int GetNumberOfNodesEvaluated();
 };
 
 
@@ -36,7 +43,6 @@ Searcher<T, Solution, Comparator>::Searcher() {
 
 template<class T, class Solution, class Comparator>
 State<T> *Searcher<T, Solution, Comparator>::PopOpenList() {
-    this->evaluatedNodes++;
     return openList.Pop();
 }
 

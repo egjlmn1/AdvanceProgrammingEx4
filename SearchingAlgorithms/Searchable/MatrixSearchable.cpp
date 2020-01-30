@@ -6,25 +6,25 @@
 #include "../State.h"
 #include "MatrixSearchable.h"
 
-MatrixSearchable::MatrixSearchable(int len, int wid, double *mat, pair<int, int> start, pair<int, int> end) {
+MatrixSearchable::MatrixSearchable(int len, int wid, double *mat, pair<int, int> *start, pair<int, int> *end) {
     this->length = len;
     this->width = wid;
     this->matrix = mat;
-    this->start = start;
-    this->end = end;
+    this->start = *start;
+    this->end = *end;
     this->InitializeStates();
 }
 
 
 void MatrixSearchable::InitializeStates() {
-    this->states = (State<string> ***) malloc(this->length * sizeof(State<string> **));
+    this->states = new State<string> **[this->length * sizeof(State<string> **)];
     for (int i = 0; i < this->length; i++) {
-        this->states[i] = (State<string> **) malloc(this->width * sizeof(State<string> *));
+        this->states[i] = new State<string> *[this->width * sizeof(State<string> *)];
     }
 
     for (int i = 0; i < this->length; i++) {
         for (int j = 0; j < this->width; j++) {
-            this->states[i][j] = new State<string>(to_string(i) + " " + to_string(j),
+            this->states[i][j] = new State<string>(::to_string(i) + " " + ::to_string(j),
                                                    matrix[i * this->length + j], CalcHeuristic(i, j));
         }
     }
@@ -52,19 +52,19 @@ vector<State<string> *> MatrixSearchable::GetAllPossibleStates(State<string> *s)
         exit(1);
     }
 
-    if (stateLen == 0) {
-        neighbors.push_back(this->states[stateLen + 1][stateWid]);
-    } else if (stateLen == this->length - 1) {
+    if (stateLen == this->length - 1) {
         neighbors.push_back(this->states[stateLen - 1][stateWid]);
+    } else if (stateLen == 0) {
+        neighbors.push_back(this->states[stateLen + 1][stateWid]);
     } else {
         neighbors.push_back(this->states[stateLen - 1][stateWid]);
         neighbors.push_back(this->states[stateLen + 1][stateWid]);
     }
 
-    if (stateWid == 0) {
-        neighbors.push_back(this->states[stateLen][stateWid + 1]);
-    } else if (stateWid == this->length - 1) {
+    if (stateWid == this->width - 1) {
         neighbors.push_back(this->states[stateLen][stateWid - 1]);
+    } else if (stateWid == 0) {
+        neighbors.push_back(this->states[stateLen][stateWid + 1]);
     } else {
         neighbors.push_back(this->states[stateLen][stateWid - 1]);
         neighbors.push_back(this->states[stateLen][stateWid + 1]);
@@ -106,5 +106,35 @@ int MatrixSearchable::GetWidthByState(State<string> *s) {
 
 double MatrixSearchable::CalcHeuristic(int i, int j) {
     // manhattan distance
-    return abs(i - this->end.first) + abs(j - this->end.second);
+    return (i - this->end.first) * (i - this->end.first) + (j - this->end.second) * (j - this->end.second);
+}
+
+MatrixSearchable::MatrixSearchable() {
+
+}
+
+string MatrixSearchable::to_string() {
+    string s = "";
+    for (int i = 0; i < this->length; ++i) {
+        for (int j = 0; j < this->width; ++j) {
+            int val = (int) this->matrix[i * this->length + j];
+            if (val != -1) {
+                s += " ";
+                s += ::to_string(val);
+                s += " ";
+            } else {
+                s += ::to_string(val);
+                s += " ";
+            }
+
+            if (j != this->width - 1) {
+                s += " ";
+            }
+        }
+
+        if (i != this->length - 1) {
+            s += "\n";
+        }
+    }
+    return s;
 }

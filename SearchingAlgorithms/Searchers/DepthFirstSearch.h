@@ -19,6 +19,10 @@ public:
     vector<State<T> *> search(ISearchable<T> *searchable);
 
     vector<State<T> *> CreateSolution(ISearchable<T> *searchable);
+
+    int GetNumberOfNodesEvaluated() {
+        return Searcher<T, vector<State<T> *>, StateComparator<T>>::GetNumberOfNodesEvaluated();
+    };
 };
 
 
@@ -26,12 +30,14 @@ template<class T>
 vector<State<T> *> DepthFirstSearch<T>::search(ISearchable<T> *searchable) {
     stack<State<T> *> stack;
     unordered_set<T> visited;
+    this->evaluatedNodes = 0;
 
     State<T> *n = searchable->GetInitialState();
     stack.push(n);
     visited.insert(n->GetState());
 
     while (!stack.empty()) {
+        this->evaluatedNodes++;
         auto s = stack.top();
         stack.pop();
 

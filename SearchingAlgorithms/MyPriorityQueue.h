@@ -21,6 +21,12 @@ public:
     State<T>* Pop();
     int GetSize();
     bool IsInQueue(State<T>* n);
+
+    void Empty() {
+        while (!this->queue.empty()) {
+            this->queue.pop();
+        }
+    }
 };
 
 template<class T, class Comparator>
@@ -89,5 +95,6 @@ bool MyPriorityQueue<T, Comparator>::IsInQueue(State<T> *n) {
 
     return flag;
 }
+
 
 #endif //FLIGHTSIMULATORMASTER_MYPRIORITYQUEUE_H

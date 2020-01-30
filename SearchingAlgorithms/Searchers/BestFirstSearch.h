@@ -18,13 +18,21 @@ public:
     BestFirstSearch<T>() {}
     vector<State<T>*> search(ISearchable<T> *searchable);
     vector<State<T>*> CreateSolution(ISearchable<T> *searchable);
+
+    int GetNumberOfNodesEvaluated() {
+        return Searcher<T, vector<State<T> *>, StateComparator<T>>::GetNumberOfNodesEvaluated();
+    };
 };
 
 
 template<class T>
 vector<State<T> *> BestFirstSearch<T>::search(ISearchable<T> *searchable) {
+
+    /*
+    this->evaluatedNodes = 0;
     this->PushOpenList(searchable->GetInitialState());
     while (this->OpenListSize() > 0) {
+        this->evaluatedNodes++;
         State<T> *n = this->PopOpenList();
         this->closed.insert(n->GetState());
         if (n->Equals(searchable->GetGoalState())) {
@@ -50,6 +58,51 @@ vector<State<T> *> BestFirstSearch<T>::search(ISearchable<T> *searchable) {
                 if (newCost < state->GetCost()) {
                     state->UpdatePrevious(n);
                     state->UpdateCost(newCost);
+                    this->UpdateQueue();
+                }
+
+            }
+        }
+    }
+    return vector<State<T> *>();*/
+
+    this->evaluatedNodes = 0;
+    this->closed.clear();
+    this->EmptyQueue();
+    searchable->GetInitialState()->UpdateRouteCost(0);
+    this->PushOpenList(searchable->GetInitialState());
+    while (this->OpenListSize() > 0) {
+        this->evaluatedNodes++;
+        State<T> *n = this->PopOpenList();
+        this->closed.insert(n->GetState());
+
+        if (n->Equals(searchable->GetGoalState())) {
+            return this->CreateSolution(searchable);
+        }
+
+        vector<State<T> *> successors = searchable->GetAllPossibleStates(n);
+
+        for (State<T> *state : successors) {
+            if (!n->Equals(searchable->GetInitialState())) {
+                if (state->GetCost() == -1 || n->GetPrevious()->Equals(state)) {
+                    continue;
+                }
+            }
+
+
+            if (!this->IsInOpenList(state) && this->closed.find(state->GetState()) == this->closed.end()) {
+                state->UpdatePrevious(n);
+                state->UpdateRouteCost(n->GetRouteCost() + state->GetRouteCost());
+                this->PushOpenList(state);
+                this->UpdateQueue();
+            } else {
+                double newCost = n->GetRouteCost() + state->GetCost();
+                if (newCost < state->GetRouteCost()) {
+                    state->UpdatePrevious(n);
+                    state->UpdateRouteCost(newCost);
+                    if (!this->IsInOpenList(state)) {
+                        this->PushOpenList(state);
+                    }
                     this->UpdateQueue();
                 }
 
