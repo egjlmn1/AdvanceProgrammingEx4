@@ -108,7 +108,7 @@ int MatrixSearchable::GetWidthByState(State<string> *s) {
 
 double MatrixSearchable::CalcHeuristic(int i, int j) {
     // manhattan distance
-    return (i - this->end.first) * (i - this->end.first) + (j - this->end.second) * (j - this->end.second);
+    return abs((i - this->end.first) + (j - this->end.second));
 }
 
 string MatrixSearchable::to_string() {

@@ -9,7 +9,7 @@
 int main(int argc, char *argv[]) {
 
     MyParallelServer s;
-    int port = 5400;
+    int port = 5600;
     if (argc >= 2) {
         try {
             port = atoi(argv[1]);
@@ -18,6 +18,5 @@ int main(int argc, char *argv[]) {
         }
     }
     s.open(port, new MyTestClientHandler());
-
     return 0;
 }

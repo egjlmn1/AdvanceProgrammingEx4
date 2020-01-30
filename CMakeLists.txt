@@ -34,5 +34,5 @@ add_executable(AdvanceProgrammingEx4
         SearchingAlgorithms/Searchers/DepthFirstSearch.h
         SearchingAlgorithms/Searchers/AStar.h
 
-        Solvers/MatrixSolver.cpp Solvers/MatrixSolver.h
+        SearchableSolutionAdapter/MatrixSearchSolverAdapter.cpp SearchableSolutionAdapter/MatrixSearchSolverAdapter.h
         Problems/MatrixProblem.cpp Problems/MatrixProblem.h SearchingAlgorithms/AddHeuristicComparator.h)

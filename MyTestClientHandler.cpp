@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <iostream>
 #include <algorithm>
-#include "Solvers/MatrixSolver.h"
+#include "SearchableSolutionAdapter/MatrixSearchSolverAdapter.h"
 #include "Problems/MatrixProblem.h"
 
 
@@ -68,11 +68,11 @@ void MyTestClientHandler::create_problem(const string& data, int socket) {
     start_end.second = pair<int, int>(atoi(point[0].c_str()), atoi(point[1].c_str()));
 
 
-    MatrixSolver solver;
+    MatrixSearchSolverAdapter solver;
     MatrixProblem m = MatrixProblem(matrix_problem, size, size, start_end.first, start_end.second);
     StringSolution solution_string = solver.solve(m) ;
 
-    send(socket, solution_string.get_string().c_str(), solution_string.get_string().size(), 0);
+    send(socket, solution_string.to_string().c_str(), solution_string.to_string().size(), 0);
 }
 
 vector <string> MyTestClientHandler::split(string data, char to_split) {

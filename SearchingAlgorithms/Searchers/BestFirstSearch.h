@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <unordered_set>
+#include <iostream>
 #include "../State.h"
 #include "Searcher.h"
 
@@ -26,7 +27,6 @@ public:
 
 template<class T>
 vector<State<T> *> BestFirstSearch<T>::search(ISearchable<T> *searchable) {
-
     this->evaluatedNodes = 0;
     this->closed.clear();
     this->EmptyQueue();
@@ -65,7 +65,6 @@ vector<State<T> *> BestFirstSearch<T>::search(ISearchable<T> *searchable) {
             }
         }
     }
-
     cout << "Got stuck" << endl;
     return vector<State<T> *>();
 }

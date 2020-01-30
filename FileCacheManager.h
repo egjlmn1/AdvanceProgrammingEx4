@@ -9,6 +9,7 @@
 #include <list>
 #include <unordered_map>
 #include <fstream>
+#include <iostream>
 
 
 using namespace problem_solving;
@@ -16,9 +17,7 @@ using namespace problem_solving;
 template <class Problem, class Solution>
 class FileCacheManager : CacheManager<Problem, Solution> {
 
-    int size;
 public:
-    FileCacheManager(int size) : size(size) {}
 
     bool has_solution(Problem& p) override {
         ifstream ifile(p.to_string());
@@ -27,21 +26,27 @@ public:
 
     Solution get_solution(Problem& p) override {
         if (!has_solution(p)) {
-            throw "an error";
+            cerr << "an error" << endl;
         }
-
         try {
             std::ifstream infile(p.to_string(), std::ifstream::binary);
-            Solution obj;
-            infile.read((char *) &obj, sizeof(obj));
-            if (infile.bad()) {
-                throw "falied reading from file";
+            Solution sol;
+            Solution total_solution;
+
+            while (getline(infile, sol)){
+                total_solution += sol;
             }
+
+            if (infile.bad()) {
+                cerr << "falied reading from file" << endl;
+            }
+
+
             infile.close();
-            return obj;
+            return sol;
         }
         catch (const char *e) {
-            throw e;
+            cerr << e << endl;
         }
     }
 
@@ -49,14 +54,14 @@ public:
         //save in file
         try {
             std::ofstream outfile(p.to_string(), std::ofstream::binary);
-            outfile.write((char *) &s, sizeof(s));
+            outfile << s;
             if (outfile.bad()) {
-                throw "falied writing to file";
+                cerr << "falied writing to file" << endl;
             }
             outfile.close();
         }
         catch (const char *e) {
-            throw e;
+            cerr << e << endl;
         }
     }
 };

@@ -7,6 +7,7 @@
 
 #include <algorithm>
 #include <unordered_set>
+#include <iostream>
 #include "../State.h"
 #include "Searcher.h"
 #include "../AddHeuristicComparator.h"

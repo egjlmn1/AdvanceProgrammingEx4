@@ -11,9 +11,10 @@
 class StringSolution {
     string solution;
 public:
-    StringSolution(const string &solution) : solution(solution) {}
-    string get_string() {return solution;}
+    explicit StringSolution(string solution) : solution(solution) {}
+    StringSolution() : solution("err") {}
     string to_string() {return solution;}
+    string set_string(string s) {solution = s;}
 
 };
 

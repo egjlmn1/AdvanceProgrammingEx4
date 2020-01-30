@@ -2,8 +2,8 @@
 // Created by egjlmn1 on 1/29/20.
 //
 
-#ifndef FLIGHTSIMULATORMASTER_MATRIXSOLVER_H
-#define FLIGHTSIMULATORMASTER_MATRIXSOLVER_H
+#ifndef FLIGHTSIMULATORMASTER_MATRIXSEARCHSOLVERADAPTER_H
+#define FLIGHTSIMULATORMASTER_MATRIXSEARCHSOLVERADAPTER_H
 
 #include "../Interfaces.h"
 #include "../SearchingAlgorithms/Searchable/MatrixSearchable.h"
@@ -12,10 +12,10 @@
 
 
 using namespace problem_solving;
-class MatrixSolver : Solver<MatrixProblem, StringSolution> {
+class MatrixSearchSolverAdapter : Solver<MatrixProblem, StringSolution> {
 public:
     StringSolution solve(MatrixProblem& problem) override;
 };
 
 
-#endif //FLIGHTSIMULATORMASTER_MATRIXSOLVER_H
+#endif //FLIGHTSIMULATORMASTER_MATRIXSEARCHSOLVERADAPTER_H
