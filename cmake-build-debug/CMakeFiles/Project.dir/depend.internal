@@ -6,11 +6,15 @@ CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.cpp
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/State.h
-CMakeFiles/Project.dir/SearchingAlgorithms/StateComparator.cpp.obj
 CMakeFiles/Project.dir/main.cpp.obj
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/AddHeuristicComparator.h
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MatricesGenerator.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/MyPriorityQueue.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/ISearchable.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchable/MatrixSearchable.h
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Astar.h
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BestFirstSearch.h
+ C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/BreadthFirstSearch.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/DepthFirstSearch.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/ISearcher.h
  C:/Users/ophir/CLionProjects/AdvanceProgrammingEx4/SearchingAlgorithms/Searchers/Searcher.h

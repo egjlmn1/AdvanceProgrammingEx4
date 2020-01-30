@@ -6,10 +6,14 @@ CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj: 
 CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj: ../SearchingAlgorithms/Searchable/MatrixSearchable.h
 CMakeFiles/Project.dir/SearchingAlgorithms/Searchable/MatrixSearchable.cpp.obj: ../SearchingAlgorithms/State.h
 
-
+CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/AddHeuristicComparator.h
+CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/MatricesGenerator.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/MyPriorityQueue.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchable/ISearchable.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchable/MatrixSearchable.h
+CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/Astar.h
+CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/BestFirstSearch.h
+CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/BreadthFirstSearch.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/DepthFirstSearch.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/ISearcher.h
 CMakeFiles/Project.dir/main.cpp.obj: ../SearchingAlgorithms/Searchers/Searcher.h

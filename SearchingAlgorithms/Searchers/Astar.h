@@ -52,6 +52,45 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
 
         vector<State<T> *> successors = searchable->GetAllPossibleStates(n);
         for (State<T> *state : successors) {
+
+            if (state->GetCost() == -1) {
+                continue;
+            }
+
+            if (this->closed.find(state->GetState()) == this->closed.end() && !this->IsInOpenList(state)) {
+                double newCost = n->GetRouteCost() + state->GetCost();
+
+                if (newCost < state->GetRouteCost()) {
+                    state->UpdatePrevious(n);
+                    state->UpdateRouteCost(newCost);
+                    this->PushOpenList(state);
+                    this->UpdateQueue();
+                }
+            }
+
+            if (!this->IsInOpenList(state) && this->closed.find(state->GetState()) != this->closed.end()) {
+                double newCost = n->GetRouteCost() + state->GetCost();
+
+                if (newCost < state->GetRouteCost()) {
+                    state->UpdatePrevious(n);
+                    state->UpdateRouteCost(newCost);
+                    this->PushOpenList(state);
+                    this->closed.erase(state->GetState());
+                    this->UpdateQueue();
+                }
+            }
+
+            if (this->IsInOpenList(state)) {
+                double newCost = n->GetRouteCost() + state->GetCost();
+
+                if (newCost < state->GetRouteCost()) {
+                    state->UpdatePrevious(n);
+                    state->UpdateRouteCost(newCost);
+                    this->UpdateQueue();
+                }
+            }
+
+            /*
             if (state->GetCost() == -1 || this->closed.find(state->GetState()) != this->closed.end()) {
                 continue;
             }
@@ -66,6 +105,7 @@ vector<State<T> *> AStar<T>::search(ISearchable<T> *searchable) {
                 }
                 this->UpdateQueue();
             }
+            */
         }
     }
     cout << "Got stuck" << endl;
