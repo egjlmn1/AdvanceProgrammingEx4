@@ -30,7 +30,7 @@ unzip ex4.zip
 
 If you want to use another algorithm change it in the MatrixSolver class in the solve function. Change the Searcher from AStar to anything you want.
 
-Now we can run the program.‬‬
+Now you can send your own matrix, and get the answer for the least cost path from the starting point to the end poin
 
 Compile the program using the g++ compiler with the line
 
